@@ -21,16 +21,16 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <!-- Clave de API (Debug)
+        <!-- Clave de API (Debug) -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBNDo5LIdNdybFhYGwYXD2jNhuI7d88xOA" />
-        -->
 
-        <!-- Clave de API (Release) -->
+        <!-- Clave de API (Release)
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyC6vKtPOWhcZsiZn1ccQCpBy0ccqeN68c0" />
+        -->
 
         <activity
             android:name=".VentanaInicio"

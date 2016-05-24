@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="version_num" translatable="false">1.0 Final
+    <string name="version_num" translatable="false">1.0 Final Debug
     </string>
 
     <string name="version_build" translatable="false">733

@@ -1,0 +1,437 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TabHost android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondo_contenido">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs" />
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent" >
+
+                <LinearLayout android:id="@+id/tabDatosProfesional"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/scrProScrollVentana">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/scrProContenidoScroll"
+                            android:padding="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/fondo_blanco_layout_redondeado"
+                                android:padding="5dp"
+                                android:id="@+id/layoutProCabecera"
+                                android:layout_margin="5dp">
+
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/layoutProAvatar">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="74dp"
+                                        android:layout_height="74dp"
+                                        android:id="@+id/imgProAvatar"
+                                        android:src="@drawable/default_avatar"
+                                        android:layout_margin="5dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentLeft="true"
+                                        app:border_width="1dp"
+                                        app:border_color="@color/borde_circulo_perfil"/>
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/layoutProNombre"
+                                    android:layout_toEndOf="@+id/layoutProAvatar"
+                                    android:layout_toRightOf="@+id/layoutProAvatar"
+                                    android:paddingLeft="2dp"
+                                    android:paddingBottom="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Nombre Profesional"
+                                        android:id="@+id/txtProNombre"
+                                        android:padding="2dp"
+                                        android:textColor="@color/negro"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TableLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/layoutProRatings">
+
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:padding="2dp" >
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/VentanaDatosProfesional_txt_calidad"
+                                                android:id="@+id/txtProCalidad"
+                                                android:paddingRight="4dp"
+                                                android:textStyle="bold"
+                                                android:textColor="@color/texto_general" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="0,00"
+                                                android:id="@+id/txtProCalidadDatos"
+                                                android:paddingRight="4dp"
+                                                android:textColor="@color/texto_general" />
+
+                                            <RatingBar
+                                                style="?android:attr/ratingBarStyleSmall"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/rtnProCalidad"
+                                                android:isIndicator="true"
+                                                android:numStars="5"
+                                                android:stepSize="0.1"
+                                                android:paddingLeft="2dp" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:padding="2dp" >
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/VentanaDatosProfesional_txt_precio"
+                                                android:id="@+id/txtProPrecio"
+                                                android:paddingRight="4dp"
+                                                android:textStyle="bold"
+                                                android:textColor="@color/texto_general" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="0,00"
+                                                android:id="@+id/txtProPrecioDatos"
+                                                android:paddingRight="4dp"
+                                                android:textColor="@color/texto_general" />
+
+                                            <RatingBar
+                                                style="?android:attr/ratingBarStyleSmall"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/rtnProPrecio"
+                                                android:isIndicator="true"
+                                                android:numStars="5"
+                                                android:stepSize="0.1"
+                                                android:paddingLeft="2dp" />
+                                        </TableRow>
+                                    </TableLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Descripción"
+                                        android:id="@+id/txtProDescripcion"
+                                        android:padding="2dp"
+                                        android:textColor="@color/texto_general"
+                                        android:textStyle="italic" />
+
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/fondo_blanco_layout_redondeado"
+                                android:id="@+id/layoutProExternoContacto"
+                                android:padding="5dp"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/VentanaDatosProfesional_txt_contacto"
+                                    android:id="@+id/txtProContacto"
+                                    android:padding="5dp"
+                                    android:textStyle="bold|italic"
+                                    android:textSize="16dp" />
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/layoutProInternoContacto"
+                                    android:layout_below="@+id/txtProContacto">
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/tbrProDireccion"
+                                        android:padding="2dp" >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/VentanaDatosProfesional_txt_direccion"
+                                            android:id="@+id/txtProDireccion"
+                                            android:paddingRight="4dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/texto_general" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Dirección del profesional o negocio"
+                                            android:id="@+id/txtProDireccionDatos"
+                                            android:paddingRight="4dp"
+                                            android:textColor="@color/texto_clickable" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/tbrProPoblacion"
+                                        android:padding="2dp" >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/VentanaDatosProfesional_txt_poblacion"
+                                            android:id="@+id/txtProPoblacion"
+                                            android:paddingRight="4dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/texto_general" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Población (Provincia)"
+                                            android:id="@+id/txtProPoblacionDatos"
+                                            android:paddingRight="4dp"
+                                            android:textColor="@color/texto_general" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/tbrProTelefono1"
+                                        android:padding="2dp" >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/VentanaDatosProfesional_txt_telefono"
+                                            android:id="@+id/txtProTelefono"
+                                            android:paddingRight="4dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/texto_general" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="teléfono1"
+                                            android:id="@+id/txtProTelefono1Datos"
+                                            android:paddingRight="4dp"
+                                            android:textColor="@color/texto_clickable"
+                                            android:clickable="true" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/tbrProTelefono2"
+                                        android:padding="2dp" >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/txtInvisible"
+                                            android:paddingRight="4dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/texto_general" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="teléfono2"
+                                            android:id="@+id/txtProTelefono2Datos"
+                                            android:paddingRight="4dp"
+                                            android:textColor="@color/texto_clickable" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/tbrProEmail"
+                                        android:padding="2dp" >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/VentanaDatosProfesional_txt_email"
+                                            android:id="@+id/txtProEmail"
+                                            android:paddingRight="4dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/texto_general" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="email@del.profesional.es"
+                                            android:id="@+id/txtProEmailDatos"
+                                            android:paddingRight="4dp"
+                                            android:textColor="@color/texto_clickable" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/tbrProWeb"
+                                        android:padding="2dp" >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/VentanaDatosProfesional_txt_web"
+                                            android:id="@+id/txtProWeb"
+                                            android:paddingRight="4dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/texto_general" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="www.web-del-profesional.com"
+                                            android:id="@+id/txtProWebDatos"
+                                            android:paddingRight="4dp"
+                                            android:textColor="@color/texto_clickable" />
+                                    </TableRow>
+
+                                </TableLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/fondo_blanco_layout_redondeado"
+                                android:id="@+id/layoutProExternoEspecializacion"
+                                android:padding="5dp"
+                                android:layout_margin="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/VentanaDatosProfesional_txt_especialidades"
+                                    android:id="@+id/txtProEspecializacion"
+                                    android:padding="5dp"
+                                    android:textStyle="bold|italic"
+                                    android:textSize="16dp"
+                                    android:layout_alignBaseline="@+id/btnProEspecializacion" />
+
+                                <ToggleButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:textOn="@string/VentanaDatosProfesional_txt_btnEspecialidades_ocultar"
+                                    android:textOff="@string/VentanaDatosProfesional_txt_btnEspecialidades_mostrar"
+                                    android:id="@+id/btnProEspecializacion"
+                                    android:textSize="9sp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentTop="true"
+                                    android:checked="false" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/txtProEspecializacion"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:padding="2dp"
+                                    android:id="@+id/layoutProInternoEspecializacion">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Actividad  /  Categoría  /  Tipo"
+                                        android:id="@+id/txtProEspecialidades"
+                                        android:layout_margin="10dp"
+                                        android:textColor="@color/texto_general"
+                                        android:typeface="monospace"
+                                        android:textSize="12dp"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5dp"
+                                        android:padding="5dp"
+                                        android:id="@+id/layoutEspecialidades"></LinearLayout>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+
+                <LinearLayout android:id="@+id/tabValoraciones"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp">
+
+                    <ListView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:divider="@color/amarillo"
+                        android:dividerHeight="0dp"
+                        android:id="@+id/listaValoraciones" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>

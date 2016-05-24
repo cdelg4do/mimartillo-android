@@ -1,0 +1,984 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:background="@color/fondo_contenido">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView4" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:id="@+id/perfPro_layoutCuenta">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/perfPro_layoutCuentaCabecera"
+                    android:onClick="onClick_LayoutSecciones" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_cuenta"
+                        android:id="@+id/textView25"
+                        android:padding="5dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fondo_blanco_layout_redondeado"
+                    android:id="@+id/perfPro_layoutCuentaDatos"
+                    android:layout_margin="5dp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/perfPro_layoutAvatar" >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="74dp"
+                            android:layout_height="74dp"
+                            android:id="@+id/perfPro_imgAvatar"
+                            android:src="@drawable/default_avatar"
+                            android:layout_marginLeft="5dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            app:border_width="1dp"
+                            app:border_color="@color/borde_circulo_perfil"
+                            android:layout_marginTop="5dp" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_eliminarimagen"
+                            android:id="@+id/perfPro_btnEliminarAvatar"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@null"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/perfPro_imgAvatar"
+                            android:layout_marginLeft="-9dp" />
+
+                    </RelativeLayout>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/perfPro_layoutRatings"
+                        android:layout_toRightOf="@+id/perfPro_layoutAvatar"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignTop="@+id/perfPro_layoutAvatar"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/general_txt_votos"
+                                android:id="@+id/perfPro_txtVotos"
+                                android:paddingRight="4dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/texto_general" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:id="@+id/perfPro_txtVotosDatos"
+                                android:paddingRight="4dp"
+                                android:textColor="@color/texto_general" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Calidad:"
+                                android:id="@+id/perfPro_txtCalidad"
+                                android:paddingRight="4dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/texto_general" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0,00"
+                                android:id="@+id/perfPro_txtCalidadDatos"
+                                android:paddingRight="4dp"
+                                android:textColor="@color/texto_general" />
+
+                            <RatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:id="@+id/perfPro_rtnCalidad"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:stepSize="0.1"
+                                android:paddingLeft="2dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Precio:"
+                                android:id="@+id/perfPro_txtPrecio"
+                                android:paddingRight="4dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/texto_general" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0,00"
+                                android:id="@+id/perfPro_txtPrecioDatos"
+                                android:paddingRight="4dp"
+                                android:textColor="@color/texto_general" />
+
+                            <RatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:id="@+id/perfPro_rtnPrecio"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:stepSize="0.1"
+                                android:paddingLeft="2dp" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/perfPro_layoutPremium"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_margin="5dp"
+                        android:layout_below="@+id/perfPro_layoutRatings"
+                        android:layout_toRightOf="@+id/perfPro_layoutAvatar">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/VentanaPerfil_txt_usuarioPremium"
+                                android:id="@+id/textView40"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold|italic"
+                                android:textColor="@color/oro" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/VentanaPerfil_txt_usuarioPremiumNo"
+                                android:id="@+id/perfPro_txtPremiumDatos"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/rojo"
+                                android:typeface="monospace"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/perfPro_imgAyuda"
+                                android:src="@drawable/ic_ayuda"
+                                android:layout_marginLeft="5dp" />
+
+                        </TableRow>
+                    </TableLayout>
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/perfPro_layoutEmail"
+                        android:paddingLeft="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_toEndOf="@+id/perfPro_layoutAvatar"
+                        android:layout_alignParentEnd="false"
+                        android:layout_alignParentBottom="false"
+                        android:layout_below="@+id/perfPro_layoutPremium"
+                        android:layout_alignParentLeft="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_usuario"
+                            android:id="@+id/textView21"
+                            android:padding="2dp"
+                            android:textColor="@color/texto_general"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="     "
+                            android:id="@+id/perfPro_txtEmail"
+                            android:padding="2dp"
+                            android:textColor="@color/negro"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:textIsSelectable="true"
+                            android:layout_marginLeft="15dp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/perfPro_layoutNombre"
+                        android:layout_below="@+id/perfPro_layoutEmail"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_nombre"
+                            android:id="@+id/perfPro_txtNombreInfo"
+                            android:textStyle="bold"
+                            android:textColor="@color/texto_general"
+                            android:paddingLeft="5dp"
+                            android:layout_marginTop="3dp" />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/perfPro_txtNombre"
+                            android:paddingRight="4dp"
+                            android:textColor="@color/texto_general"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="@string/VentanaPerfil_txt_nombreParaMostrar"
+                            android:textSize="12dp"
+                            android:layout_toRightOf="@+id/perfPro_txtNombreInfo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_descripcion"
+                            android:id="@+id/perfPro_txtDescripcionInfo"
+                            android:textStyle="bold"
+                            android:textColor="@color/texto_general"
+                            android:paddingLeft="5dp"
+                            android:layout_below="@+id/perfPro_txtNombre"
+                            android:layout_marginTop="8dp" />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="12sp"
+                            android:typeface="serif"
+                            android:id="@+id/perfPro_txtDescripcion"
+                            android:textColor="@color/texto_general"
+                            android:lines="3"
+                            android:gravity="top|left"
+                            android:background="@drawable/recuadro_gris_fondo_blanco"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/VentanaPerfil_txt_descripcionHint"
+                            android:layout_below="@+id/perfPro_txtNombre"
+                            android:layout_toRightOf="@+id/perfPro_txtDescripcionInfo"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_btnCuenta"
+                        android:id="@+id/perfPro_btnCabecera"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignWithParentIfMissing="false"
+                        android:layout_alignParentBottom="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/perfPro_layoutNombre"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/perfPro_layoutPassword"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/perfPro_layoutPasswordCabecera"
+                    android:onClick="onClick_LayoutSecciones">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_cambiarPassword"
+                        android:id="@+id/textView29"
+                        android:padding="5dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:id="@+id/perfPro_layoutPasswordDatos"
+                    android:layout_marginBottom="-5dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/perfPro_txtPasswordActual"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="@string/VentanaPerfil_txt_passwordActualHint"
+                        android:inputType="textPassword"
+                        android:textSize="12dp" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/perfPro_txtPasswordNuevo1"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/VentanaPerfil_txt_passwordNuevo1Hint"
+                        android:inputType="textPassword"
+                        android:textSize="12dp" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/perfPro_txtPasswordNuevo2"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="@string/VentanaPerfil_txt_passwordNuevo2Hint"
+                        android:inputType="textPassword"
+                        android:textSize="12dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_btnPassword"
+                        android:id="@+id/perfPro_btnPassword"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/perfPro_layoutSeguridad"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:layout_margin="5dp"
+                android:padding="5dp" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/perfPro_layoutSeguridadCabecera"
+                    android:onClick="onClick_LayoutSecciones" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_seguridadConexion"
+                        android:id="@+id/textView23"
+                        android:padding="5dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:id="@+id/perfPro_layoutSeguridadDatos"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_seguridadConexionInfo"
+                        android:id="@+id/textView24"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="italic"
+                        android:visibility="visible"
+                        android:layout_marginBottom="10dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|right"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_seguridadConexionUso"
+                            android:id="@+id/textView43"
+                            android:textStyle="italic"
+                            android:visibility="visible"
+                            android:textColor="@color/negro" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/VentanaPerfil_txt_seguridadConexionActivada"
+                                android:id="@+id/perfPro_txtEstadoSeguridad"
+                                android:textStyle="bold"
+                                android:textColor="@color/verde" />
+
+                            <Switch
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/perfPro_swSeguridad"
+                                android:checked="true"
+                                android:layout_marginBottom="5dp"
+                                android:elegantTextHeight="false"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:minWidth="80dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/perfPro_layoutContacto"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:padding="5dp"
+                android:layout_margin="5dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/perfPro_layoutContactoCabecera"
+                    android:onClick="onClick_LayoutSecciones">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_contacto"
+                        android:id="@+id/textView"
+                        android:padding="5dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/perfPro_layoutContactoDatos">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_contactoExplicacionPro"
+                        android:id="@+id/textView9"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="italic"
+                        android:visibility="visible"
+                        android:layout_marginBottom="10dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/perfPro_layoutDireccion"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_poblacionTitulo"
+                            android:id="@+id/perfPro_txtUbicacion"
+                            android:textStyle="bold"
+                            android:textColor="@color/texto_general"
+                            android:paddingLeft="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_direccion"
+                            android:id="@+id/perfPro_txtDireccionInfo"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/perfPro_txtUbicacion"
+                            android:layout_marginLeft="15dp" />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14sp"
+                            android:typeface="serif"
+                            android:id="@+id/perfPro_txtDireccion"
+                            android:textColor="@color/texto_general"
+                            android:lines="2"
+                            android:gravity="top|left"
+                            android:hint="@string/VentanaPerfil_txt_direccionHint"
+                            android:background="@drawable/recuadro_gris_fondo_blanco"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/perfPro_txtDireccionInfo"
+                            android:layout_alignTop="@+id/perfPro_txtDireccionInfo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/general_txt_provincia"
+                            android:id="@+id/perfPro_txtProvinciaInfo"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/perfPro_txtDireccion"
+                            android:layout_marginLeft="15dp" />
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/perfPro_spnProvincia"
+                            android:layout_marginRight="10dp"
+                            android:spinnerMode="dialog"
+                            android:layout_alignTop="@+id/perfPro_txtProvinciaInfo"
+                            android:layout_alignLeft="@+id/perfPro_txtDireccion"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/general_txt_poblacion"
+                            android:id="@+id/perfPro_txtPoblacionInfo"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/perfPro_spnProvincia"
+                            android:layout_marginLeft="15dp" />
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/perfPro_spnPoblacion"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:spinnerMode="dialog"
+                            android:layout_alignTop="@+id/perfPro_txtPoblacionInfo"
+                            android:layout_alignLeft="@+id/perfPro_txtDireccion" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/perfPro_layoutTelefonos">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_telefonos"
+                            android:id="@+id/textView31"
+                            android:textStyle="bold"
+                            android:textColor="@color/texto_general"
+                            android:paddingLeft="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="8dp" />
+
+                        <EditText
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/perfPro_txtTelefono1"
+                            android:textColor="@color/texto_general"
+                            android:hint="@string/VentanaPerfil_txt_telefono1"
+                            android:textSize="12sp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignLeft="@+id/perfPro_txtTelefono2"
+                            android:layout_alignStart="@+id/perfPro_txtTelefono2"
+                            android:layout_marginTop="5dp"
+                            android:inputType="phone" />
+
+                        <EditText
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/perfPro_txtTelefono2"
+                            android:textColor="@color/texto_general"
+                            android:hint="@string/VentanaPerfil_txt_telefono2"
+                            android:textSize="12dp"
+                            android:layout_gravity="right"
+                            android:layout_below="@+id/textView31"
+                            android:layout_toRightOf="@+id/textView31"
+                            android:layout_toEndOf="@+id/textView31"
+                            android:layout_marginTop="15dp"
+                            android:inputType="phone" />
+                    </RelativeLayout>
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/perfPro_layoutEmailWeb">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/VentanaPerfil_txt_emailContacto"
+                                android:id="@+id/textView38"
+                                android:textStyle="bold"
+                                android:textColor="@color/texto_general"
+                                android:paddingLeft="5dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="8dp" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/perfPro_txtEmailContacto"
+                                android:textColor="@color/texto_general"
+                                android:hint="@string/VentanaPerfil_txt_emailContactoHint"
+                                android:textSize="12sp"
+                                android:layout_marginTop="5dp"
+                                android:inputType="textEmailAddress" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/VentanaPerfil_txt_web"
+                                android:id="@+id/textView39"
+                                android:textStyle="bold"
+                                android:textColor="@color/texto_general"
+                                android:paddingLeft="5dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="8dp" />
+
+                            <EditText
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/perfPro_txtWeb"
+                                android:textColor="@color/texto_general"
+                                android:hint="@string/VentanaPerfil_txt_webHint"
+                                android:inputType="textUri"
+                                android:textSize="12sp"
+                                android:layout_marginTop="5dp" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_btnContacto"
+                        android:id="@+id/perfPro_btnContacto"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/perfPro_layoutEspecialidades"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:layout_margin="5dp"
+                android:padding="5dp" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/perfPro_layoutEspecialidadesCabecera"
+                    android:onClick="onClick_LayoutSecciones" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_especialidades"
+                        android:id="@+id/textView42"
+                        android:padding="5dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:id="@+id/perfPro_layoutEspecialidadesDatos"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_sinEspecialidades"
+                        android:id="@+id/perfPro_txtSinEspecialidades"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="italic"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/perfPro_botonNuevaEspecialidad"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView5"
+                            android:src="@drawable/ic_nuevaespecialidad" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_agregarEspecialidad"
+                            android:id="@+id/textView44"
+                            android:textColor="@color/blanco"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="15dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_especialidadesSeleccionadas"
+                        android:id="@+id/perfPro_txtEspecialidadesSeleccionadas"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="italic"
+                        android:visibility="visible"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/negro" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:id="@+id/perfPro_listadoEspecialidades"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="10dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_btnEspecialidades"
+                        android:id="@+id/perfPro_btnEspecialidades"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/perfPro_layoutOtros"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:padding="5dp"
+                android:layout_margin="5dp" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/perfPro_layoutOtrosCabecera"
+                    android:onClick="onClick_LayoutSecciones">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_otros"
+                        android:id="@+id/textView16"
+                        android:padding="5dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/perfPro_layoutOtrosDatos"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_otrosExplicacionPro"
+                        android:id="@+id/textView17"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="italic"
+                        android:visibility="visible"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_idiomaNotificaciones"
+                        android:id="@+id/textView22"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_general"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="10dp" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/perfPro_spnIdioma"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_publicidad"
+                        android:id="@+id/textView28"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_general"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="10dp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/perfPro_rgrPublicidad">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_publicidadSi"
+                            android:id="@+id/perfPro_rbtnPublicidadSi"
+                            android:checked="false"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_publicidadNo"
+                            android:id="@+id/perfPro_rbtnPublicidadNo"
+                            android:checked="false"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="12sp" />
+                    </RadioGroup>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_btnOtros"
+                        android:id="@+id/perfPro_btnOtros"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

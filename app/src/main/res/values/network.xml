@@ -1,0 +1,73 @@
+<resources>
+    <!-- Parámetros generales para la conexión por red -->
+    <integer name="DEFAULT_CONNECTION_TIMEOUT">10000</integer>
+    <integer name="DEFAULT_SOCKET_TIMEOUT">10000</integer>
+
+    <string name="URL_nonSecure_protocol" translatable="false">"http"</string>
+    <string name="URL_nonSecure_port" translatable="false">"80"</string>
+
+    <string name="URL_secure_protocol" translatable="false">"https"</string>
+    <string name="URL_secure_port" translatable="false">"443"</string>
+
+    <string name="URL_domain" translatable="false">"mimartillo.duckdns.org"</string>
+    <!-- <string name="URL_domain">"192.168.1.160"</string> -->
+    <string name="URL_webservices_folder" translatable="false">"webservices"</string>
+
+
+    <!-- Métodos de petición HTTP de los servicios web disponibles -->
+    <string name="METHOD_webservice_login" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_checkSession" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_register" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_newWork" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_myWorks" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_workInfo" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_professionalInfo" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_modifyFavorites" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_myFavorites" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_searchParameters" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_professionalSearch" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_userProfile" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_initialParametersNewWork" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_workFollowers" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_closeWork" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_voteWork" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_removeWork" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_testImages" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_testDownloadImages" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_myWorksPro" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_workSearch" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_myVotes" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_premiumAccess" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_followWork" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_unfollowWork" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_professionalProfile" translatable="false">"POST"</string>
+    <string name="METHOD_webservice_passwordReset" translatable="false">"POST"</string>
+
+    <!-- Identificadores de los servicios web disponibles -->
+    <string name="NAME_webservice_login" translatable="false">"login.php"</string>
+    <string name="NAME_webservice_checkSession" translatable="false">"check_session.php"</string>
+    <string name="NAME_webservice_register" translatable="false">"register.php"</string>
+    <string name="NAME_webservice_newWork" translatable="false">"new_work.php"</string>
+    <string name="NAME_webservice_myWorks" translatable="false">"my_works.php"</string>
+    <string name="NAME_webservice_workInfo" translatable="false">"work_info.php"</string>
+    <string name="NAME_webservice_professionalInfo" translatable="false">"professional_info.php"</string>
+    <string name="NAME_webservice_modifyFavorites" translatable="false">"modify_favorites.php"</string>
+    <string name="NAME_webservice_myFavorites" translatable="false">"my_favorites.php"</string>
+    <string name="NAME_webservice_searchParameters" translatable="false">"spinner_values.php"</string>
+    <string name="NAME_webservice_professionalSearch" translatable="false">"professional_search.php"</string>
+    <string name="NAME_webservice_userProfile" translatable="false">"user_profile.php"</string>
+    <string name="NAME_webservice_initialParametersNewWork" translatable="false">"initial_parameters_new_work.php"</string>
+    <string name="NAME_webservice_workFollowers" translatable="false">"work_followers.php"</string>
+    <string name="NAME_webservice_closeWork" translatable="false">"close_work.php"</string>
+    <string name="NAME_webservice_voteWork" translatable="false">"vote_work.php"</string>
+    <string name="NAME_webservice_removeWork" translatable="false">"remove_work.php"</string>
+    <string name="NAME_webservice_myWorksPro" translatable="false">"my_works_pro.php"</string>
+    <string name="NAME_webservice_workSearch" translatable="false">"work_search.php"</string>
+    <string name="NAME_webservice_myVotes" translatable="false">"my_votes.php"</string>
+    <string name="NAME_webservice_premiumAccess" translatable="false">"premium_access.php"</string>
+    <string name="NAME_webservice_followWork" translatable="false">"follow_work.php"</string>
+    <string name="NAME_webservice_unfollowWork" translatable="false">"unfollow_work.php"</string>
+    <string name="NAME_webservice_professionalProfile" translatable="false">"professional_profile.php"</string>
+    <string name="NAME_webservice_passwordReset" translatable="false">"password_reset.php"</string>
+
+</resources>

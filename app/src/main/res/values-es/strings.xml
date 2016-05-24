@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--
+    RECURSOS DE TEXTO UTILIZADOS POR LA APLICACIÓN
+
+    * CÓDIGO:       es-rES
+
+    * IDIOMA:       Español
+
+    * LOCALIZACIÓN: España
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    SECCIÓN #1: TEXTO DE LAS OPCIONES DE MENÚ (drawers, menús de ventana y menús contextuales)
+    ================================================================================================
+-->
+
+    <string name="opcionDrawer_perfil">Perfil</string>
+    <string name="opcionDrawer_misObrasAbiertas">Mis obras abiertas</string>
+    <string name="opcionDrawer_misObrasCerradas">Historial de obras cerradas</string>
+    <string name="opcionDrawer_nuevaObra">Crear nueva obra</string>
+    <string name="opcionDrawer_misFavoritos">Mis favoritos</string>
+    <string name="opcionDrawer_buscarProfesional">Buscar profesionales</string>
+    <string name="opcionDrawer_acercaDe">Acerca de miMartillo.com</string>
+    <string name="opcionDrawer_misObrasAdjudicadas">Mis obras adjudicadas</string>
+    <string name="opcionDrawer_misObrasCompletadas">Historial de obras completadas</string>
+    <string name="opcionDrawer_misObrasSeguidas">Obras en seguimiento</string>
+    <string name="opcionDrawer_misValoraciones">Mis valoraciones</string>
+    <string name="opcionDrawer_buscarObra">Buscar obras</string>
+    <string name="opcionDrawer_accesoPremium">¡GRATIS! Acceso Premium</string>
+
+    <string name="opcionMenu_cerrar_sesion">Cerrar sesión</string>
+    <string name="opcionMenu_actualizar">Actualizar</string>
+    <string name="opcionMenu_ver_detalles">Ver detalles</string>
+    <string name="opcionMenu_cerrar_obra">Cerrar obra</string>
+    <string name="opcionMenu_eliminar_obra">Eliminar obra</string>
+    <string name="opcionMenu_valorar_obra">Valorar obra</string>
+    <string name="opcionMenu_agregar_favorito">Añadir favorito</string>
+    <string name="opcionMenu_eliminar_favorito">Eliminar favorito</string>
+    <string name="opcionMenu_repetir_busqueda">Repetir búsqueda</string>
+    <string name="opcionMenu_resetear_formulario">Resetear formulario</string>
+    <string name="opcionMenu_seguir_obra">Seguir esta obra</string>
+    <string name="opcionMenu_ignorar_obra">Dejar de seguir la obra</string>
+
+    <string name="opcionMenu_ordenar_resultados">Ordenar resultados&#8230;</string>
+    <string name="opcionMenu_ordenar_obras">Ordenar obras&#8230;</string>
+    <string name="opcionMenu_ordenar_titulo_asc">Por título (A)</string>
+    <string name="opcionMenu_ordenar_distancia_asc">Por distancia (A)</string>
+    <string name="opcionMenu_ordenar_tipo_asc">Por tipo (A)</string>
+    <string name="opcionMenu_ordenar_realizacion_asc">Por realización (A)</string>
+    <string name="opcionMenu_ordenar_realizacion_desc">Por realización (D)</string>
+    <string name="opcionMenu_ordenar_antiguedad_desc">Por antigüedad (D)</string>
+    <string name="opcionMenu_ordenar_visitas_desc">Por visitas (D)</string>
+    <string name="opcionMenu_ordenar_nombre_asc">Por nombre (A)</string>
+    <string name="opcionMenu_ordenar_poblacion_asc">Por población (A)</string>
+    <string name="opcionMenu_ordenar_provincia_asc">Por provincia (A)</string>
+    <string name="opcionMenu_ordenar_votos_desc">Por votos (D)</string>
+    <string name="opcionMenu_ordenar_favoritos_primero">Favoritos primero</string>
+    <string name="opcionMenu_ordenar_favoritos_despues">Favoritos después</string>
+    <string name="opcionMenu_ordenar_valoraciones">Ordenar valoraciones&#8230;</string>
+    <string name="opcionMenu_ordenar_solicitante_asc">Por solicitante (A)</string>
+    <string name="opcionMenu_ordenar_calidad_desc">Por calidad (D)</string>
+    <string name="opcionMenu_ordenar_precio_desc">Por precio (D)</string>
+    <string name="opcionMenu_ordenar_fecha_desc">Por fecha (D)</string>
+    <string name="opcionMenu_ordenar_favoritos">Ordenar favoritos&#8230;</string>
+
+
+<!--
+    SECCIÓN #2: MENSAJES ASOCIADOS A SERVICIOS WEB (toasts, título y contenido de diálogos)
+    ================================================================================================
+-->
+
+    <!-- Títulos de las operaciones que se realizan mediante servicios web -->
+    <string name="titulo_servicio_desconocido">Operación desconocida</string>
+    <string name="titulo_servicio_LOGIN">Inicio de sesión</string>
+    <string name="titulo_servicio_CHECK_SESSION">Validación de credenciales</string>
+    <string name="titulo_servicio_REGISTER">Registro de usuario</string>
+    <string name="titulo_servicio_NEW_WORK">Nueva obra</string>
+    <string name="titulo_servicio_INITIAL_PARAMETERS_NEW_WORK">Carga de datos</string>
+    <string name="titulo_servicio_MY_WORKS">Listado de obras</string>
+    <string name="titulo_servicio_WORK_INFO">Detalles de la obra</string>
+    <string name="titulo_servicio_PROFESSIONAL_SEARCH">Búsqueda de profesionales</string>
+    <string name="titulo_servicio_PROFESSIONAL_INFO">Información sobre el profesional</string>
+    <string name="titulo_servicio_MODIFY_FAVORITES">Agregar/quitar de favoritos</string>
+    <string name="titulo_servicio_MY_FAVORITES">Listado de profesionales favoritos</string>
+    <string name="titulo_servicio_SPINNER_VALUES">Datos del formulario</string>
+    <string name="titulo_servicio_USER_PROFILE">Perfil de usuario</string>
+    <string name="titulo_servicio_WORK_FOLLOWERS">Seguidores de la obra</string>
+    <string name="titulo_servicio_CLOSE_WORK">Cerrar obra</string>
+    <string name="titulo_servicio_VOTE_WORK">Valorar obra</string>
+    <string name="titulo_servicio_REMOVE_WORK">Eliminar obra</string>
+    <string name="titulo_servicio_MY_WORKS_PRO">Listado de obras</string>
+    <string name="titulo_servicio_WORK_SEARCH">Búsqueda de obras</string>
+    <string name="titulo_servicio_MY_VOTES">Valoraciones recibidas</string>
+    <string name="titulo_servicio_PREMIUM_ACCESS">Acceso Premium</string>
+    <string name="titulo_servicio_FOLLOW_WORK">Seguimiento de obra</string>
+    <string name="titulo_servicio_UNFOLLOW_WORK">Seguimiento de obra</string>
+    <string name="titulo_servicio_PROFESSIONAL_PROFILE">Perfil de usuario</string>
+    <string name="titulo_servicio_PASSWORD_RESET">Reinicio de contraseña</string>
+
+    <!-- Texto genérico del diálogo de progreso (mientras dura la tarea en segundo plano -->
+    <string name="txt_progresoSegundoPlano">Conectando&#8230;</string>
+
+    <!-- Mensaje de error inesperado -->
+    <string name="msg_generico_ErrorInesperado">Se ha producido un error inesperado, por favor contacte con Soporte si el problema persiste.</string>
+
+    <!-- Mensajes de error de tarea en segundo plano (falo de la tarea, timeout, respuesta incorrecta) -->
+    <string name="msg_generico_ErrorFalloTarea">Se produjo un fallo al procesar la respuesta del servidor. Esto podría deberse a alguna operación de mantenimiento, por favor inténtalo de nuevo pasados unos minutos.\n\nComunícate con Soporte si el problema persiste.</string>
+    <string name="msg_generico_ErrorTimeoutTarea">Hay problemas para comunicar con el servidor, por favor revisa tu conexión a internet o inténtalo de nuevo pasados unos minutos.</string>
+    <string name="msg_generico_ErrorRespuestaIncorrecta">Se produjo un fallo al recibir la respuesta del servidor, comunícate con Soporte si el problema persiste.</string>
+
+    <!-- Mensajes de error de sesion -->
+    <string name="msg_generico_ErrorSesionInvalida">Las credenciales almacenadas ya no son válidas. Por favor, identíficate de nuevo.</string>
+    <string name="msg_generico_ErrorSesionExpirada">La sesión de este dispositivo ha expirado. Por favor, identifícate de nuevo.</string>
+    <string name="msg_generico_ErrorUsuarioDeshabilitado1">El usuario</string>
+    <string name="msg_generico_ErrorUsuarioDeshabilitado2">está deshabilitado. Si ya activaste la cuenta después de registrarte, ponte en contacto con Soporte.</string>
+
+    <!-- Mensajes de alta de usuario -->
+    <string name="msg_RegistroUsuario_ERR_UsuarioRepetido">Ya existe un usuario con esa dirección de correo.</string>
+    <string name="msg_RegistroUsuario_ERR_EnviarCorreo">Se ha creado tu cuenta de usuario, pero ha habido un error al intentar enviarte el correo con las instrucciones de activación.\n\nPor favor, contacta con Soporte para solventar este problema.</string>
+    <string name="msg_RegistrarUsuario_OK_UsuarioCreado">Se ha creado tu cuenta de usuario.\n\nTe hemos enviado un correo con las instrucciones para su activación.</string>
+
+    <!-- Mensajes de inicio de sesión -->
+    <string name="msg_Login_ERR_PasswordIncorrecto">Usuario o contraseña incorrecta.</string>
+    <string name="titulo_Login_OK_FalloAvatar">Imagen de avatar</string>
+    <string name="msg_Login_OK_FalloAvatar">Hubo un problema al cargar la imagen de tu avatar.\nRecuerda que puedes establecer una nueva imagen desde tu perfil.</string>
+
+    <!-- Mensajes de búsqueda de obras -->
+    <string name="msg_BuscarObras_OK_SinCoincidencias">Ninguna obra responde a tus criterios.</string>
+    <string name="msg_BuscarObras_OK_HayCoincidencias">obras responden a tus criterios.</string>
+
+    <!-- Mensajes de añadir/eliminar favorito -->
+    <string name="msg_AgregarFavorito_OK_FavoritoAgregado">Profesional añadido a tu lista de favoritos.</string>
+    <string name="msg_EliminarFavorito_OK_FavoritoEliminado">Profesional eliminado de tu lista de favoritos.</string>
+
+    <!-- Mensajes de buscar profesional -->
+    <string name="msg_BuscarProfesional_OK_SinCoincidencias">Ningún profesional responde a tus criterios.</string>
+    <string name="msg_BuscarProfesional_OK_HayCoincidencias">profesionales responden a tus criterios.</string>
+
+    <!-- Mensajes de Mis Obras -->
+    <string name="msg_MisObras_OK_ObrasAbiertas">Actualmente no tienes ninguna obra abierta. Utiliza la opción de \"Crear nueva obra\" del menú de la izquierda para abrir nuevas obras.</string>
+    <string name="msg_MisObras_OK_ObrasCerradas">Aún no has cerrado ninguna obra.</string>
+
+    <!-- Mensajes de Mis Obras Pro -->
+    <string name="msg_MisObrasPro_OK_ObrasAdjudicadas">Actualmente no tienes ninguna obra adjudicada pendiente de completarse. Utiliza la opción de \"Buscar obras\" del menú de la izquierda para encontrar nuevas obras.</string>
+    <string name="msg_MisObrasPro_OK_ObrasCompletadas">Aún no has completado ninguna obra. Utiliza la opción de "Buscar obras" del menú de la izquierda para encontrar nuevas obras.</string>
+    <string name="msg_MisObrasPro_OK_ObrasSeguidas">Actualmente no tienes obras en seguimiento. Utiliza la opción de "Buscar obras" del menú de la izquierda para encontrar nuevas obras.</string>
+
+    <!-- Mensajes de Mis Favoritos -->
+    <string name="msg_MisFavoritos_OK_ListadoFavoritos">Aún no has añadido ningún profesional a tu lista de favoritos.</string>
+
+    <!-- Mensajes de Mis Valoraciones -->
+    <string name="msg_MisValoraciones_OK_ProfesionalTitular">Aún no has recibido ninguna valoración de ningun usuario.</string>
+
+    <!-- Mensajes de información de obra -->
+    <string name="msg_InfoObra_ERR_ObraInexistente">Esta obra ya no existe, es posible que su solicitante la haya eliminado.\n\nPrueba a actualizar el listado de obras.</string>
+
+    <!-- Mensajes de error de Cierre de obra -->
+    <string name="msg_CerrarObra_ERR_ObraInexistente">Esta obra no existe (puede que haya sido eliminada), prueba a actualizar el listado de obras abiertas.</string>
+    <string name="msg_CerrarObra_ERR_ObraYaCerrada">Esta obra ya fue cerrada, prueba a actualizar el listado de obras.</string>
+    <string name="msg_CerrarObra_ERR_UsuarioNoAutorizado">Solo el solicitante de esta obra puede cerrarla.</string>
+    <string name="msg_CerrarObra_ERR_AdjudicatarioInexistente">El profesional indicado ya no existe, prueba a actualizar el listado de obras abiertas.</string>
+    <string name="msg_CerrarObra_OK_ObraCerrada">Has cerrado esta obra correctamente.</string>
+
+    <!-- Mensajes de valorar obra -->
+    <string name="msg_ValorarObra_ERR_OperacionDenegada">No tienes permisos para valorar esta obra o bien la obra ya no existe, prueba a actualizar el listado de obras.</string>
+    <string name="msg_ValorarObra_OK_ValoracionRealizada">Se ha registrado tu valoración. ¡Gracias!</string>
+
+    <!-- Mensajes de seguir/olvidar obra -->
+    <string name="msg_SeguirObra_ERR_NoEsPremium">Solo los usuarios Premium pueden seguir una obra.\n\nContacta con Soporte para informarte sobre cómo conseguir tu acceso Premium y disfrutar de sus ventajas.</string>
+    <string name="msg_SeguirObra_ERR_ObraInexistente">Esta obra ya no existe, es posible que su solicitante la haya eliminado.\n\nPrueba a actualizar el listado de obras.</string>
+    <string name="msg_SeguirObra_ERR_ObraYaCerrada">Esta obra ya está cerrada, es posible que su solicitante la haya adjudicado.\n\nPrueba a actualizar el listado de obras.</string>
+    <string name="msg_SeguirObra_ERR_LimiteSeguidores">Lo sentimos, pero ya se ha alcanzado el límite de seguidores para esta obra.\n\nPuede que alguno de los actuales profesionales interesados dejen de seguirla, prueba a intentarlo más tarde.</string>
+    <string name="msg_SeguirObra_OK_ObraSeguida">Ahora estás siguiendo esta obra.</string>
+    <string name="msg_OlvidarObra_OK_ObraOlvidada">Has dejado de seguir esta obra.</string>
+
+    <!-- Mensajes de eliminar obra -->
+    <string name="msg_EliminarObra_ERR_ObraInexistente">Esta obra no existe (puede que ya haya sido eliminada), prueba a actualizar el listado de obras.</string>
+    <string name="msg_EliminarObra_ERR_OperacionNoAutorizada">No puedes eliminar esta obra, solo su solicitante puede hacerlo.</string>
+    <string name="msg_EliminarObra_ERR_OperacionCancelada">No es posible eliminar esta obra porque ya ha sido adjudicada a algún profesional.</string>
+    <string name="msg_EliminarObra_OK_ObraEliminada">La obra ha sido eliminada.</string>
+
+    <!-- Mensajes de información del profesional -->
+    <string name="msg_InfoProfesional_ERR_ProfesionalInexistente">Este profesional no existe (puede que haya sido eliminado), prueba a actualizar el listado de profesionales.</string>
+
+    <!-- Mensajes de perfil de usuario particular -->
+    <string name="msg_PerfilParticular_ERR_PasswordActualIncorrecto">El password actual que has indicado no es correcto.</string>
+    <string name="titulo_PerfilParticular_OK_FalloImagen">Imagen de avatar</string>
+    <string name="msg_PerfilParticular_OK_FalloImagen">Se produjo un fallo al cargar la imagen de tu avatar.\nPor favor, intenta establecer una nueva.</string>
+    <string name="msg_PerfilParticular_OK_CabeceraActualizada">Se ha actualizado la imagen de perfil (puede que el cambio no sea visible hasta que inicies sesión de nuevo).</string>
+    <string name="msg_PerfilParticular_OK_PasswordActualizado">Se ha actualizado tu contraseña.</string>
+    <string name="msg_PerfilParticular_OK_ContactoActualizado">Se han actualizado tus datos de contacto.</string>
+    <string name="msg_PerfilParticular_OK_OtrosActualizado">Se han actualizado tus datos.</string>
+
+    <!-- Mensajes de perfil de usuario profesional -->
+    <string name="msg_PerfilProfesional_ERR_PasswordActualIncorrecto">El password actual que has indicado no es correcto.</string>
+    <string name="titulo_PerfilProfesional_OK_FalloImagen">Imagen de avatar</string>
+    <string name="msg_PerfilProfesional_OK_FalloImagen">Se produjo un fallo al cargar la imagen de tu avatar.\nPor favor, intenta establecer una nueva.</string>
+    <string name="msg_PerfilProfesional_OK_CuentaActualizada">Se han actualizado los datos de tu cuenta (puede que algún cambio no sea visible hasta que inicies sesión de nuevo).</string>
+    <string name="msg_PerfilProfesional_OK_PasswordActualizado">Se ha actualizado tu contraseña.</string>
+    <string name="msg_PerfilProfesional_OK_ContactoActualizado">Se han actualizado tus datos de contacto.</string>
+    <string name="msg_PerfilProfesional_OK_EspecialidadesActualizadas">Se han actualizado tus especialidades.</string>
+    <string name="msg_PerfilProfesional_OK_OtrosActualizado">Se han actualizado tus datos.</string>
+
+    <!-- Mensajes de reiniciar contraseña -->
+    <string name="msg_ResetPassword_ERR_UsuarioInexistente">El usuario indicado no existe</string>
+    <string name="msg_ResetPassword_ERR_EnviarCorreo">Ha habido un problema al enviarte el correo con instrucciones para reiniciar tu contraseña, por favor inténtalo de nuevo.\n\nSi el problema persiste, ponte en contacto con Soporte.</string>
+    <string name="msg_ResetPassword_OK_CorreoEnviado">Te hemos enviado un correo con instrucciones para reiniciar tu contraseña</string>
+
+    <!-- Mensajes de Activar acceso Premium -->
+    <string name="msg_AccesoPremium_OK_Activado">Se ha activado el acceso Premium.\n\n¡Ya puedes disfrutar de sus ventajas exclusivas!</string>
+    <string name="msg_AccesoPremium_OK_Desactivado">Se ha desactivado el acceso Premium.</string>
+    <string name="msg_AccesoPremium_OK_PromocionFinalizada">Lo sentimos, esta promoción ya no está disponible.\n\nSi deseas modificar tu acceso Premium, por favor ponte en contacto con Soporte.</string>
+
+
+<!--
+    SECCIÓN #3: RESTO DE MENSAJES (toasts, título y contenido de diálogos)
+    ================================================================================================
+-->
+
+    <string name="general_txt_dispositivoSinConexion">Verifica que tu dispositivo esté conectado a Internet y vuelve a intentarlo.</string>
+    <string name="general_txt_msgCierreSesion">Se ha cerrado la sesión</string>
+    <string name="general_txt_emailInvalido">La dirección de correo no es válida</string>
+    <string name="general_txt_passwordInvalido">La contraseña debe ser entre 6 y 16 caracteres</string>
+    <string name="general_txt_imagenPerfil">Mostrando imagen de perfil del usuario</string>
+    <string name="general_txt_imagenObra">Mostrando imagen de la obra</string>
+    <string name="general_txt_msgAccesibilidad_drawerOpen">Abriendo desplegable de opciones</string>
+    <string name="general_txt_msgAccesibilidad_drawerClose">Cerrando desplegable de opciones</string>
+    <string name="general_txt_msgUbicacionDesactivada_titulo">El servicio de ubicación está desactivado</string>
+    <string name="general_txt_msgUbicacionDesactivada">Algunas de las funciones de localización requieren que el servicio de ubicación del dispositivo esté activado.\n\n¿Deseas ir a la pantalla de ajustes para activar el servicio de ubicación?</string>
+    <string name="general_txt_valorarObra_msgCosteIncorrecto">El coste introducido no es correcto</string>
+    <string name="general_txt_msgFalloSeleccionImagen">No pudo cargarse la imagen seleccionada</string>
+
+    <string name="dialogo_agregarEspecialidad_txt_msgConfirmacion">Se ha añadido tu selección a la lista. No olvides pulsar el botón de \"Actualizar especialidades\" para hacer efectivos los cambios.</string>
+    <string name="dialogo_cerrarObra_txt_msgOperacionCancelada">Operación de cerrar obra cancelada</string>
+    <string name="dialogo_valorarObra_txt_msgFormulario1">Indica tu valoración sobre la calidad de la obra (1: pésima, 5: excelente)</string>
+    <string name="dialogo_valorarObra_txt_msgFormulario2">Indica tu valoración sobre el precio de la obra (1: muy caro, 5: muy barato)</string>
+    <string name="dialogo_valorarObra_txt_msgFormulario3">Indica tu comentario sobre la obra o el profesional que la realizó</string>
+    <string name="dialogo_valorarObra_txt_msgOperacionCancelada">Operación de valorar obra cancelada</string>
+    <string name="dialogo_valorarObra_txt_msgObraNoAsignada">No es posible valorar esa obra (no se asignó a ningún profesional)</string>
+    <string name="dialogo_valorarObra_txt_msgObraYaValorada">No es posible valorar esa obra (ya fue valorada previamente)</string>
+
+    <string name="Utils_aplicacionExterna_txt_msgSinLlamadas">Lo sentimos, no tienes en tu dispositivo ninguna aplicación para realizar llamadas</string>
+    <string name="Utils_aplicacionExterna_txt_msgSinCorreos">Lo sentimos, no tienes en tu dispositivo ninguna aplicación para enviar correos</string>
+    <string name="Utils_aplicacionExterna_txt_msgSinNavegador">Lo sentimos, no tienes en tu dispositivo ninguna aplicación para visualizar páginas web</string>
+    <string name="Utils_aplicacionExterna_txt_msgSinMapas">Lo sentimos, no tienes en tu dispositivo ninguna aplicación para visualizar mapas</string>
+    <string name="Utils_eliminarObra_txt_msgCancelado">Acción de eliminar la obra cancelada</string>
+    <string name="Utils_eliminarEspecialidad_txt_msgConfirmacion">Se ha eliminado esa especialidad de la lista. No olvides pulsar el botón de \"Actualizar especialidades\" para hacer efectivos los cambios.</string>
+
+    <string name="VentanaBusqueda_txt_msgFormulario1">Debes seleccionar al menos uno de los criterios de búsqueda</string>
+    <string name="VentanaBusqueda_txt_msgFormulario2">Para buscar por tipologia al menos debes seleccionar la actividad en el desplegable correspondiente</string>
+    <string name="VentanaBusqueda_txt_msgFormulario3">Para buscar por proximidad desde una población, debes seleccionar la provincia y la población en el desplegable correspondiente</string>
+    <string name="VentanaBusqueda_txt_msgFormulario4">Para buscar por texto, debes indicar palabras de al menos 4 caracteres de longitud</string>
+
+    <string name="VentanaInicio_txt_msgSinConexion_titulo">Acceso a la aplicación</string>
+
+    <string name="VentanaLogin_txt_faltanDatos">Debes rellenar ambos campos</string>
+
+    <string name="VentanaMostrarImagen_txt_msgFalloImagen">Se ha producido un fallo al mostrar la imagen</string>
+
+    <string name="VentanaNuevaObra_txt_msgFormulario1">Debes indicar un título descriptivo para la obra</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario2">Debes indicar la actividad, categoría y tipo de la obra</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario3">Debes indicar una fecha estimada de ejecución de la obra</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario4">Debes indicar un nombre para la persona de contacto de la obra</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario5">Debes indicar al menos un método de contacto (teléfono y/o email)</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario6">Debes indicar una descripción detallada de la obra</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario7">Debes indicar provincia y población en que se ubica la obra</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario8">Debes indicar el punto del mapa en que se ubica la obra</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario9">La fecha de ejecución indicada no es válida</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario10">La fecha de ejecución debe ser posterior a la actual</string>
+    <string name="VentanaNuevaObra_txt_msgObraPublicada">Se ha publicado la nueva obra,\nactualiza el listado de obras abiertas para verla</string>
+
+    <string name="VentanaPerfil_txt_msgImagenNoSeleccionada">No se seleccionó ninguna imagen</string>
+    <string name="VentanaPerfil_txt_msgFormulario1">Debes introducir tu password actual</string>
+    <string name="VentanaPerfil_txt_msgFormulario2">La contraseña repetida no coincide</string>
+    <string name="VentanaPerfil_txt_msgFormulario3">La contraseña nueva no puede ser igual que la actual</string>
+    <string name="VentanaPerfil_txt_msgFormulario4">La nueva contraseña debe tener entre 6 y 16 caracteres</string>
+    <string name="VentanaPerfil_txt_msgFormulario5">Debes indicar un nombre para mostrar</string>
+    <string name="VentanaPerfil_txt_msgFormulario6">Selecciona una población de la lista, o bien selecciona \"&lt;Sin especificar&gt;\" como provincia.</string>
+    <string name="VentanaPerfil_txt_msgFormulario7">La fecha de nacimiento indicada no es válida</string>
+    <string name="VentanaPerfil_txt_msgFormulario8">La fecha de nacimiento debe ser anterior a la actual</string>
+
+    <string name="VentanaPerfil_txt_msgAyudaPremium_titulo">Acceso Premium</string>
+    <string name="VentanaPerfil_txt_msgAyudaPremium">Contacta con nuestro equipo de Soporte para saber cómo activar tu acceso Premium.</string>
+    <string name="VentanaPerfil_txt_msgFormulario9">Debes introducir un nombre para mostrar (ej: Construcciones S.A.)</string>
+    <string name="VentanaPerfil_txt_msgFormulario10">El email de contacto no es válido.</string>
+    <string name="VentanaPerfil_txt_msgFormulario11">La web indicada no es válida.</string>
+    <string name="VentanaPerfil_txt_msgFormulario12">Error en la selección de especialidades. Por favor, vuelve a intentarlo.</string>
+
+    <string name="VentanaRegistro_txt_msgFaltanDatos">Debes rellenar ambos campos</string>
+    <string name="VentanaRegistro_txt_msgEmailInvalido">La dirección de correo no es válida</string>
+    <string name="VentanaRegistro_txt_msgPasswordsDistintas">Las contraseñas no coindiden</string>
+    <string name="VentanaRegistro_txt_msgAceptarCondiciones">Debes de aceptar las condiciones para poder registrarte</string>
+
+    <string name="VentanaResetPassword_txt_faltanDatos">Debes indicar tu dirección de correo</string>
+
+
+<!--
+    SECCIÓN #4: TEXTOS DE ELEMENTOS DE LA INTERFAZ GRÁFICA (layouts xml)
+    ================================================================================================
+-->
+
+    <string name="general_txt_tipoAcceso_particular">Acceso usuario particular</string>
+    <string name="general_txt_tipoAcceso_profesional">Acceso usuario profesional</string>
+    <string name="general_txt_provincia">Provincia:</string>
+    <string name="general_txt_poblacion">Población:</string>
+    <string name="general_txt_votos">Votos:</string>
+    <string name="general_txt_profesionalSinValoraciones">Este profesional no ha recibido ninguna valoración aún.</string>
+    <string name="general_txt_unidadDistancia">km</string>
+
+    <string name="spinner_txt_sinEspecificar">&lt;Sin especificar&gt;</string>
+    <string name="spinner_txt_cualquiera">&lt;Cualquiera&gt;</string>
+    <string name="spinner_txt_todos">&lt;Todos&gt;</string>
+    <string name="spinner_txt_primeroActividad">&lt;Primero selecciona una actividad&gt;</string>
+    <string name="spinner_txt_primeroCategoria">&lt;Primero selecciona una categoría&gt;</string>
+    <string name="spinner_txt_primeroProvincia">&lt;Primero selecciona una provincia&gt;</string>
+    <string name="spinner_txt_seleccionaActividad">&lt;Selecciona una actividad&gt;</string>
+    <string name="spinner_txt_seleccionaCategoria">&lt;Selecciona una categoría&gt;</string>
+    <string name="spinner_txt_seleccionaTipo">&lt;Selecciona un tipo de obra&gt;</string>
+    <string name="spinner_txt_seleccionaProvincia">&lt;Selecciona una provincia&gt;</string>
+    <string name="spinner_txt_seleccionaPoblacion">&lt;Selecciona una población&gt;</string>
+
+    <string name="ManejadorExcepciones_txt_trazaError">********** TRAZA DE ERROR **********\n</string>
+    <string name="ManejadorExcepciones_txt_infoDispositivo">\n****** INFO DEL DISPOSITIVO ******\n</string>
+    <string name="ManejadorExcepciones_txt_firmware">\n************ FIRMWARE ************\n</string>
+
+    <string name="VentanaAccesoPremium_txt_titulo">Acceso Premium</string>
+    <string name="VentanaAccesoPremium_txt_tituloPromocion">Promoción por tiempo limitado</string>
+    <string name="VentanaAccesoPremium_txt_promoción1">Disfruta ya mismo de todas las ventajas exclusivas de ser un usuario Premium de</string>
+    <string name="VentanaAccesoPremium_txt_ventaja1">Posibilidad de seguir obras interesantes.</string>
+    <string name="VentanaAccesoPremium_txt_ventaja2">Los particulares podrán ver que estás interesado en su obra y contactarte.</string>
+    <string name="VentanaAccesoPremium_txt_ventaja3">Acceso a los datos de contacto de los solicitantes de las obras.</string>
+    <string name="VentanaAccesoPremium_txt_ventaja4">¡100% gratis!</string>
+    <string name="VentanaAccesoPremium_txt_estado">Estado de tu acceso Premium:</string>
+    <string name="VentanaAccesoPremium_txt_estadoActivado">Activado</string>
+    <string name="VentanaAccesoPremium_txt_estadoDesactivado">Desactivado</string>
+    <string name="VentanaAccesoPremium_txt_btnActivar">Activar mi acceso Premium</string>
+    <string name="VentanaAccesoPremium_txt_btnDesactivar">Desactivar mi acceso Premium</string>
+
+    <string name="VentanaAcercaDe_txt_titulo">Acerca de miMartillo.com</string>
+    <string name="VentanaAcercaDe_txt_dispositivosAndroid">para dispositivos Android 4.1+</string>
+    <string name="VentanaAcercaDe_txt_version">Versión:</string>
+    <string name="VentanaAcercaDe_txt_build">Compilación:</string>
+    <string name="VentanaAcercaDe_txt_fecha">Fecha:</string>
+    <string name="VentanaAcercaDe_txt_soporte">Soporte:</string>
+    <string name="VentanaAcercaDe_txt_sitioWeb">Ir al sitio web de miMartillo.com</string>
+    <string name="VentanaAcercaDe_txt_asuntoEmail">Consulta Soporte</string>
+    <string name="VentanaAcercaDe_txt_copyright">\u00A92016 Carlos Delgado Andrés</string>
+
+    <string name="VentanaBusqueda_txt_titulo_obras">Buscar Obras</string>
+    <string name="VentanaBusqueda_txt_titulo_profesionales">Buscar Profesionales</string>
+    <string name="VentanaBusqueda_txt_tabCriterios">Criterios de búsqueda</string>
+    <string name="VentanaBusqueda_txt_tabResultados">Resultados de la búsqueda</string>
+    <string name="VentanaBusqueda_txt_selecciona">Selecciona criterios de búsqueda:</string>
+    <string name="VentanaBusqueda_txt_busquedaPorTipologia">Búsqueda por tipología</string>
+    <string name="VentanaBusqueda_txt_actividad">Actividad:</string>
+    <string name="VentanaBusqueda_txt_categoria">Categoría:</string>
+    <string name="VentanaBusqueda_txt_tipo">Tipo:</string>
+    <string name="VentanaBusqueda_txt_busquedaPorProximidad">Búsqueda por proximidad</string>
+    <string name="VentanaBusqueda_txt_desdeUbicacion">Desde mi ubicación actual</string>
+    <string name="VentanaBusqueda_txt_desdePoblacion">Desde una población</string>
+    <string name="VentanaBusqueda_txt_busquedaPorTexto">Búsqueda por texto</string>
+    <string name="VentanaBusqueda_txt_texto">Texto:</string>
+    <string name="VentanaBusqueda_txt_textoHint">Palabras a buscar</string>
+    <string name="VentanaBusqueda_txt_btnReset">Reset</string>
+    <string name="VentanaBusqueda_txt_btnBuscar">Buscar</string>
+    <string name="VentanaBusqueda_txt_sinResultados_obras">La última búsqueda no encontró ninguna obra con los criterios indicados.\nInténtalo de nuevo modificando los criterios de búsqueda.</string>
+    <string name="VentanaBusqueda_txt_sinResultados_profesionales">La última búsqueda no encontró ningún profesional con los criterios indicados.\nInténtalo de nuevo modificando los criterios de búsqueda.</string>
+    <string name="VentanaBusqueda_txt_sinBusquedas">No has realizado ninguna búsqueda aún.</string>
+
+    <string name="VentanaDatosObra_txt_titulo_obraAbierta">Obra abierta</string>
+    <string name="VentanaDatosObra_txt_titulo_obraCerrada">Obra cerrada</string>
+    <string name="VentanaDatosObra_txt_titulo_obraEnSeguimiento">Obra en seguimiento</string>
+    <string name="VentanaDatosObra_txt_titulo_obraAdjudicada">Obra adjudicada</string>
+    <string name="VentanaDatosObra_txt_titulo_obraCompletada">Obra completada</string>
+    <string name="VentanaDatosObra_txt_titulo_obraEncontrada">Obra encontrada</string>
+    <string name="VentanaDatosObra_txt_actualizado">Actualizado:</string>
+    <string name="VentanaDatosObra_txt_realizacion">Realización:</string>
+    <string name="VentanaDatosObra_txt_visitas">Visitas:</string>
+    <string name="VentanaDatosObra_txt_contacto">Datos de contacto:</string>
+    <string name="VentanaDatosObra_txt_disponible">Disponible solo para profesionales seguidores de esta obra</string>
+    <string name="VentanaDatosObra_txt_nombre">Nombre:</string>
+    <string name="VentanaDatosObra_txt_email">Email:</string>
+    <string name="VentanaDatosObra_txt_telefono">Teléfono:</string>
+    <string name="VentanaDatosObra_txt_descripcion">Descripción:</string>
+    <string name="VentanaDatosObra_txt_ubicacion">Ubicación:</string>
+    <string name="VentanaDatosObra_txt_fotos">Fotos:</string>
+    <string name="VentanaDatosObra_txt_sinSeguidores">No hay ningún profesional interesado aún.</string>
+    <string name="VentanaDatosObra_txt_cercaDe">Cerca de</string>
+    <string name="VentanaDatosObra_txt_tabDetalles">Detalles</string>
+    <string name="VentanaDatosObra_txt_tabInteresados">Interesados</string>
+    <string name="VentanaDatosObra_txt_asuntoEmail">Visto en miMartillo.com</string>
+
+    <string name="VentanaDatosProfesional_txt_titulo">Información del profesional</string>
+    <string name="VentanaDatosProfesional_txt_calidad">Calidad:</string>
+    <string name="VentanaDatosProfesional_txt_precio">Precio:</string>
+    <string name="VentanaDatosProfesional_txt_contacto">Información de contacto:</string>
+    <string name="VentanaDatosProfesional_txt_direccion">Dirección:</string>
+    <string name="VentanaDatosProfesional_txt_poblacion">Población:</string>
+    <string name="VentanaDatosProfesional_txt_telefono">Teléfono:</string>
+    <string name="VentanaDatosProfesional_txt_email">Email:</string>
+    <string name="VentanaDatosProfesional_txt_web">Web:</string>
+    <string name="VentanaDatosProfesional_txt_especialidades">Especialidades:</string>
+    <string name="VentanaDatosProfesional_txt_btnEspecialidades_mostrar">Mostrar</string>
+    <string name="VentanaDatosProfesional_txt_btnEspecialidades_ocultar">Ocultar</string>
+    <string name="VentanaDatosProfesional_txt_sinDatosContacto">Este profesional no ha indicado ninguna información de contacto aún.</string>
+    <string name="VentanaDatosProfesional_txt_sinEspecialidades">Este profesional no ha indicado ninguna especialización aún.</string>
+    <string name="VentanaDatosProfesional_txt_tabDetalles">Detalles</string>
+    <string name="VentanaDatosProfesional_txt_tabValoraciones">Valoraciones</string>
+    <string name="VentanaDatosProfesional_txt_asuntoEmail">Visto en miMartillo.com</string>
+
+    <string name="VentanaErrores_txt_titulo">Error en la aplicación</string>
+    <string name="VentanaErrores_txt_informativo">Se produjo un error inesperado en la aplicación. Por favor vuelva a intentarlo.</string>
+    <string name="VentanaErrores_txt_debugTitulo">Información de depuración:</string>
+    <string name="VentanaErrores_txt_btnCopiarPortapapeles">Copiar en el portapapeles</string>
+    <string name="VentanaErrores_txt_btnAceptarError">Aceptar</string>
+    <string name="VentanaErrores_txt_infoCopiada">Información del error copiada al portapapeles</string>
+
+    <string name="VentanaInicio_txt_btnAccesoParticulares">Acceso Particulares</string>
+    <string name="VentanaInicio_txt_btnAccesoProfesionales">Acceso Profesionales</string>
+    <string name="VentanaInicio_txt_problemasConexion">¿Problemas de conexión?</string>
+
+    <string name="VentanaLogin_txt_titulo">Iniciar sesión</string>
+    <string name="VentanaLogin_txt_email">Tu email</string>
+    <string name="VentanaLogin_txt_password">Contraseña</string>
+    <string name="VentanaLogin_txt_btnOlvidado">¿Olvidaste tu contraseña?</string>
+    <string name="VentanaLogin_txt_btnLogin">Entrar</string>
+    <string name="VentanaLogin_txt_btnRegistrar">Aún no tengo cuenta</string>
+
+    <string name="VentanaNuevaObra_txt_titulo">Publicar obra</string>
+    <string name="VentanaNuevaObra_txt_tituloHint">Título de la obra</string>
+    <string name="VentanaNuevaObra_txt_actividad">Actividad:</string>
+    <string name="VentanaNuevaObra_txt_categoria">Categoría:</string>
+    <string name="VentanaNuevaObra_txt_tipo">Tipo:</string>
+    <string name="VentanaNuevaObra_txt_fechaEjecucion">Ejecución:</string>
+    <string name="VentanaNuevaObra_txt_fechaEjecucionHint">Fecha estimada</string>
+
+    <string name="VentanaNuevaObra_txt_nombreHint">Persona de contacto</string>
+    <string name="VentanaNuevaObra_txt_telefonoHint">Teléfono de contacto</string>
+    <string name="VentanaNuevaObra_txt_emailHint">Email de contacto</string>
+    <string name="VentanaNuevaObra_txt_descripcion">Descripción:</string>
+    <string name="VentanaNuevaObra_txt_descripcionHint">Descripción detallada de la obra que quieres realizar.</string>
+    <string name="VentanaNuevaObra_txt_ubicacion">Ubicación:</string>
+    <string name="VentanaNuevaObra_txt_mapa">Punto en el mapa</string>
+    <string name="VentanaNuevaObra_txt_mapaHint">Selecciona un punto del mapa</string>
+    <string name="VentanaNuevaObra_txt_poblacion">Población</string>
+
+    <string name="VentanaNuevaObra_txt_btnPublicar">Publicar</string>
+    <string name="VentanaNuevaObra_txt_btnReset">Reset</string>
+
+    <string name="VentanaParticular_txt_titulo_obrasAbiertas">Mis obras abiertas</string>
+    <string name="VentanaParticular_txt_titulo_obrasCerradas">Mis obras cerradas</string>
+    <string name="VentanaParticular_txt_titulo_favoritos">Mis profesionales favoritos</string>
+    <string name="VentanaParticular_txt_NoAdjudicarAnadie">No adjudicar a nadie</string>
+
+    <string name="VentanaPerfil_txt_titulo">Ver y modificar mi perfil</string>
+    <string name="VentanaPerfil_txt_usuario">Usuario (email):</string>
+    <string name="VentanaPerfil_txt_cambiarPassword">Cambiar contraseña</string>
+    <string name="VentanaPerfil_txt_seguridadConexion">Seguridad de la conexión</string>
+    <string name="VentanaPerfil_txt_seguridadConexionInfo">En ocasiones, el protocolo de transferencia segura no está disponible. Desactiva la conexión segura solo si experimentas problemas de conexión con el servidor desde una red wifi.\n\nPara una mayor privacidad, activa la conexión segura siempre que sea posible.</string>
+    <string name="VentanaPerfil_txt_seguridadConexionUso">Conexión segura:</string>
+    <string name="VentanaPerfil_txt_seguridadConexionActivada">Activada</string>
+    <string name="VentanaPerfil_txt_seguridadConexionDesactivada">Desactivada</string>
+    <string name="VentanaPerfil_txt_passwordActualHint">Introduce la contraseña actual</string>
+    <string name="VentanaPerfil_txt_passwordNuevo1Hint">Introduce la nueva contraseña</string>
+    <string name="VentanaPerfil_txt_passwordNuevo2Hint">Repite la nueva contraseña</string>
+    <string name="VentanaPerfil_txt_btnPassword">Cambiar contraseña</string>
+    <string name="VentanaPerfil_txt_contacto">Datos de contacto</string>
+    <string name="VentanaPerfil_txt_contactoExplicacion">Estos datos se usarán como información de contacto por defecto para tus nuevas obras.</string>
+    <string name="VentanaPerfil_txt_nombre">Nombre:</string>
+    <string name="VentanaPerfil_txt_nombreParaMostrar">nombre para mostrar</string>
+    <string name="VentanaPerfil_txt_telefonos">Teléfonos:</string>
+    <string name="VentanaPerfil_txt_telefono1">teléfono 1</string>
+    <string name="VentanaPerfil_txt_telefono2">teléfono 2</string>
+    <string name="VentanaPerfil_txt_poblacionTitulo">Ubicación:</string>
+    <string name="VentanaPerfil_txt_btnContacto">Actualizar datos de contacto</string>
+    <string name="VentanaPerfil_txt_otros">Otra información</string>
+    <string name="VentanaPerfil_txt_otrosExplicacion">Estos datos permiten al equipo de miMartillo.com ofrecer un mejor servicio a sus usuarios, y en ningún caso son visibles al resto de usuarios.</string>
+    <string name="VentanaPerfil_txt_fecha">Fecha de nacimiento:</string>
+    <string name="VentanaPerfil_txt_fechaHint">DD/MM/AAAA</string>
+    <string name="VentanaPerfil_txt_sexo">Sexo:</string>
+    <string name="VentanaPerfil_txt_sexoSinEspecificar">Sin especificar</string>
+    <string name="VentanaPerfil_txt_sexoMasculino">Masculino</string>
+    <string name="VentanaPerfil_txt_sexoFemenino">Femenino</string>
+    <string name="VentanaPerfil_txt_publicidad">¿Recibir información de miMartillo.com?</string>
+    <string name="VentanaPerfil_txt_publicidadSi">Sí</string>
+    <string name="VentanaPerfil_txt_publicidadNo">No</string>
+    <string name="VentanaPerfil_txt_idiomaNotificaciones">Idioma preferido para las notificaciones:</string>
+    <string name="VentanaPerfil_txt_idiomaNotificacionesEsp">Español (España)</string>
+    <string name="VentanaPerfil_txt_idiomaNotificacionesEng">Inglés (EEUU)</string>
+    <string name="VentanaPerfil_txt_btnOtros">Actualizar información</string>
+
+    <string name="VentanaPerfil_txt_cuenta">Tu cuenta de usuario</string>
+    <string name="VentanaPerfil_txt_sinValorar">Aún no has recibido ninguna valoración</string>
+    <string name="VentanaPerfil_txt_descripcion">Descripción:</string>
+    <string name="VentanaPerfil_txt_descripcionHint">Breve descripción de tu negocio o de los servicios que ofreces, ofertas, etc.</string>
+    <string name="VentanaPerfil_txt_btnCuenta">Actualizar información de cuenta</string>
+    <string name="VentanaPerfil_txt_contactoExplicacionPro">Esta información permitirá a los usuarios interesados contactar contigo o con tu negocio.</string>
+    <string name="VentanaPerfil_txt_direccion">Dirección:</string>
+    <string name="VentanaPerfil_txt_direccionHint">Dirección física de tu negocio\n(vía, número)</string>
+    <string name="VentanaPerfil_txt_usuarioPremium">Profesional Premium:</string>
+    <string name="VentanaPerfil_txt_usuarioPremiumSi">Sí</string>
+    <string name="VentanaPerfil_txt_usuarioPremiumNo">No</string>
+    <string name="VentanaPerfil_txt_emailContacto">Email:</string>
+    <string name="VentanaPerfil_txt_emailContactoHint">Email donde otros usuarios pueden contactarte</string>
+    <string name="VentanaPerfil_txt_web">Web:</string>
+    <string name="VentanaPerfil_txt_webHint">Dirección de internet de tu sitio web</string>
+    <string name="VentanaPerfil_txt_otrosExplicacionPro">Estos datos permiten al equipo de miMartillo.com ofrecer un mejor servicio a sus usuarios.</string>
+    <string name="VentanaPerfil_txt_especialidades">Tus especialidades</string>
+    <string name="VentanaPerfil_txt_sinEspecialidades">No has indicado ninguna especialidad. Utiliza el botón \"Añadir especialidad\" para indicar los tipos de obra en que te especializas.</string>
+    <string name="VentanaPerfil_txt_agregarEspecialidad">Añadir especialidad</string>
+    <string name="VentanaPerfil_txt_especialidadesSeleccionadas">Especialidades seleccionadas:</string>
+    <string name="VentanaPerfil_txt_btnEspecialidades">Actualizar especialidades</string>
+
+    <string name="VentanaProfesional_txt_titulo_obrasAdjudicadas">Mis obras adjudicadas</string>
+    <string name="VentanaProfesional_txt_titulo_obrasCompletadas">Mis obras completadas</string>
+    <string name="VentanaProfesional_txt_titulo_obrasSeguidas">Mis obras en seguimiento</string>
+    <string name="VentanaProfesional_txt_titulo_valoraciones">Mis valoraciones recibidas</string>
+
+    <string name="VentanaRegistro_txt_titulo">Crear cuenta de usuario</string>
+    <string name="VentanaRegistro_txt_tipoParticular">Nueva cuenta de particular</string>
+    <string name="VentanaRegistro_txt_tipoProfesional">Nueva cuenta de profesional</string>
+    <string name="VentanaRegistro_txt_emailHint">Email</string>
+    <string name="VentanaRegistro_txt_nombreHint">Nombre</string>
+    <string name="VentanaRegistro_txt_passwordHint">Contraseña</string>
+    <string name="VentanaRegistro_txt_password2Hint">Repetir contraseña</string>
+    <string name="VentanaRegistro_txt_condiciones">Acepto los términos y condiciones de uso</string>
+    <string name="VentanaRegistro_txt_verCondiciones">(Mostrar)</string>
+    <string name="VentanaRegistro_txt_btnCrearCuenta">Crear cuenta</string>
+
+    <string name="VentanaResetPassword_txt_titulo">Reiniciar contraseña</string>
+    <string name="VentanaResetPassword_txt_email">Tu email</string>
+    <string name="VentanaResetPassword_txt_btnRecuperar">Enviar</string>
+
+    <string name="dialogo_agregarEspecialidad_txt_info">Selecciona un tipo de obra perteneciente a una Actividad y Categoría. También puedes seleccionar &lt;Todos&gt; los tipos pertenecientes a una categoria determinada.</string>
+    <string name="dialogo_agregarEspecialidad_txt_actividad">Actividad:</string>
+    <string name="dialogo_agregarEspecialidad_txt_categoria">Categoría:</string>
+    <string name="dialogo_agregarEspecialidad_txt_tipo">Tipo:</string>
+
+    <string name="dialogo_protocoloConexion_txt_info">En ocasiones, el protocolo de transferencia segura no está disponible. Desactiva la conexión segura solo si experimentas problemas de conexión con el servidor desde una red wifi.\n\nPara una mayor privacidad, activa la conexión segura siempre que sea posible.</string>
+    <string name="dialogo_protocoloConexion_txt_conexion">Conexión segura:</string>
+    <string name="dialogo_protocoloConexion_txt_conexion_activada">Activada</string>
+    <string name="dialogo_protocoloConexion_txt_conexion_desactivada">Desactivada</string>
+
+    <string name="dialogo_cerrarObra_txt_titulo">Cerrar obra</string>
+    <string name="dialogo_cerrarObra_txt_pregunta">¿A quién quieres adjudicar esta obra?</string>
+    <string name="dialogo_cerrarObra_txt_opcionDefecto">No adjudicar a nadie</string>
+
+    <string name="dialogo_eliminarObra_txt_titulo">Eliminar obra</string>
+    <string name="dialogo_eliminarObra_txt_pregunta">¿Deseas eliminar esta obra?\n(la operación no podrá deshacerse)</string>
+
+    <string name="dialogo_valorarObra_txt_titulo">Valorar obra</string>
+    <string name="dialogo_valorarObra_txt_adjudicatario">"Adjudicatario:"</string>
+    <string name="dialogo_valorarObra_txt_obra">"Obra:"</string>
+    <string name="dialogo_valorarObra_txt_coste">Coste de la obra:</string>
+    <string name="dialogo_valorarObra_txt_opcional">(Opcional)</string>
+    <string name="dialogo_valorarObra_txt_valoracion">Valoración sobre la obra:</string>
+    <string name="dialogo_valorarObra_txt_calidad">Calidad</string>
+    <string name="dialogo_valorarObra_txt_precio">Precio</string>
+    <string name="dialogo_valorarObra_txt_comentario">Comentario sobre la obra:</string>
+    <string name="dialogo_valorarObra_txt_comentarioHint">Tus comentarios acerca del profesional y la obra que realizó</string>
+
+    <string name="dialogo_condicionesUso_txt_titulo">Términos y condiciones</string>
+    <string name="dialogo_condicionesUso_txt_encabezado">Por favor, lee detenidamente los siguientes términos y condiciones antes de utilizar la app de miMartillo.com:</string>
+    <string name="dialogo_condicionesUso_txt_contenido">
+        &#9899; CONDICIONES DE USO
+        \n\n
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sodales eget nulla a semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus augue nulla, ornare non faucibus vel, congue ac nulla. Pellentesque sit amet nibh tincidunt, lobortis erat quis, molestie ipsum.
+        \n\n
+        Praesent maximus risus at eros vestibulum, in pharetra ipsum porta. Vivamus sed mi nec ex consectetur blandit. Suspendisse maximus pharetra purus eget dapibus. Ut diam nisl, placerat id sem vitae, varius tincidunt urna. Morbi mauris lacus, vehicula quis libero eu, finibus consequat magna. Phasellus et tempus sapien.
+        \n\n
+        Donec id lacinia orci. Donec pretium suscipit luctus. Nulla purus nisl, dapibus quis tristique in, varius eu libero. Aenean gravida imperdiet augue, eu varius eros suscipit et. Nam eu interdum nisl. Etiam in condimentum libero, eu mattis erat. Nunc tellus metus, ultricies at mollis non, mollis commodo justo.
+        \n\n
+        &#9899; PRIVACIDAD
+        \n\n
+        Proin posuere luctus odio eget sodales. Phasellus a enim tempus, aliquam mi ut, elementum sapien. Nunc rutrum neque ullamcorper imperdiet congue. Etiam elementum purus ullamcorper metus iaculis, in posuere neque accumsan. Nulla cursus tempor dolor, vitae interdum metus convallis lacinia.
+        \n\n
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi ultrices purus lacus, eu ornare augue mollis quis. Sed commodo nisi libero, eget dictum nibh blandit ac. Maecenas tellus est, scelerisque a molestie pulvinar, maximus vel magna. Sed sed sapien sed augue vestibulum feugiat.
+        \n\n
+        Nullam justo neque, dignissim a nunc at, dignissim tincidunt diam. Duis feugiat aliquam magna quis scelerisque. Mauris fringilla convallis iaculis.
+    </string>
+
+    <string name="elemento_cabeceraObra_txt_distancia">Distancia:</string>
+    <string name="elemento_cabeceraObra_txt_realizacion">Realización:</string>
+    <string name="elemento_cabeceraObra_txt_visitas">Visitas:</string>
+    <string name="elemento_cabeceraObra_txt_pendiente">(Valoracion pendiente)</string>
+    <string name="elemento_cabeceraObra_txt_seguidores">Interesados:</string>
+
+    <string name="elemento_cabeceraProfesional_txt_distancia">Distancia:</string>
+    <string name="elemento_cabeceraProfesional_txt_calidad">Calidad:</string>
+    <string name="elemento_cabeceraProfesional_txt_precio">Precio:</string>
+    <string name="elemento_cabeceraProfesional_txt_adjudicatario">(Adjudicatario de la obra)</string>
+
+    <string name="elemento_perfilParticular_txt_perfilParticular">Perfil particular</string>
+
+    <string name="elemento_perfilProfesional_txt_perfilProfesional">Perfil profesional</string>
+
+    <string name="elemento_valoracion_txt_detalles">Detalles de la obra:</string>
+    <string name="elemento_valoracion_txt_calificacionYcoste">Calificación y coste:</string>
+    <string name="elemento_valoracion_txt_calidad">Calidad:</string>
+    <string name="elemento_valoracion_txt_precio">Precio:</string>
+    <string name="elemento_valoracion_txt_comentario">Comentario:</string>
+
+
+</resources>

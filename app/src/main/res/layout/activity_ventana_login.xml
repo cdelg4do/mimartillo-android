@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/fondo_contenido"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="10dp" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Acceso particular/profesional"
+                android:id="@+id/txtTipoAcceso"
+                android:textColor="@color/amarillo"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/fondo_camposTexto"
+                android:hint="@string/VentanaLogin_txt_email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/texto_camposTexto"
+                android:textColorHint="@color/texto_ayudas_camposTexto"
+                android:elevation="5dp" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/fondo_camposTexto"
+                android:hint="@string/VentanaLogin_txt_password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/texto_camposTexto"
+                android:textColorHint="@color/texto_ayudas_camposTexto" />
+
+            <Button
+                android:id="@+id/btnOlvidado"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:gravity="top|right"
+                android:layout_marginLeft="0dip"
+                android:layout_marginTop="0dip"
+                android:background="@null"
+                android:text="@string/VentanaLogin_txt_btnOlvidado"
+                android:textAllCaps="false"
+                android:textColor="@color/azul"
+                />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@color/fondo_botones"
+                android:text="@string/VentanaLogin_txt_btnLogin"
+                android:textColor="@color/texto_botones" />
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:layout_marginLeft="50dip"
+                android:layout_marginRight="50dip"
+                android:background="@null"
+                android:text="@string/VentanaLogin_txt_btnRegistrar"
+                android:textAllCaps="false"
+                android:textColor="@color/blanco" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

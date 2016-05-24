@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/fondo_contenido">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/fondo_blanco_layout_redondeado"
+        android:id="@+id/layoutMarcoInterior" >
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutCabObraImagen" >
+
+            <ImageView
+                android:id="@+id/img_cabeceraItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_item_abierto"
+                android:padding="1dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutCabObraTitulo"
+            android:layout_toRightOf="@+id/layoutCabObraImagen"
+            android:layout_toLeftOf="@+id/layoutCabObraSeguimiento"
+            android:layout_toStartOf="@+id/layoutCabObraSeguimiento">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título de la obra"
+                android:id="@+id/txt_cabeceraTituloObra"
+                android:padding="2dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/negro" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="true"
+            android:baselineAligned="false"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="false"
+            android:layout_margin="3dp"
+            android:id="@+id/layoutCabObraSeguidores"
+            android:layout_alignBottom="@+id/layoutCabObraDatos"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                android:text="@string/elemento_cabeceraObra_txt_seguidores"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:textSize="13sp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutCabObraSeguidoresInterno"
+                android:baselineAligned="false"
+                android:background="@drawable/fondo_azul_layout_redondeado"
+                android:layout_margin="2dp">
+
+                <TextView
+                    android:id="@+id/txt_cabeceraContadorSeguidores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="35sp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    android:textColor="@color/texto_seguidoresObra"
+                    android:text="0"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/layoutCabObraDatos"
+            android:layout_toLeftOf="@+id/layoutCabObraSeguidores"
+            android:layout_toRightOf="@+id/layoutCabObraImagen"
+            android:layout_toEndOf="@+id/layoutCabObraImagen"
+            android:layout_below="@+id/layoutCabObraTitulo">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de la obra a realizar, según categorización indicada"
+                android:id="@+id/txt_cabeceraTipoObra"
+                android:padding="2dp"
+                android:textColor="@color/texto_general"
+                android:typeface="monospace" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:id="@+id/tbrCabObraDistancia">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/elemento_cabeceraObra_txt_distancia"
+                        android:id="@+id/txt_cabeceraDistancia"
+                        android:paddingRight="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_general" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="n/d"
+                        android:id="@+id/txt_cabeceraDistanciaDatos"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general"
+                        android:typeface="monospace"
+                        android:textStyle="italic" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/elemento_cabeceraObra_txt_realizacion"
+                        android:id="@+id/txt_cabeceraFecha"
+                        android:paddingRight="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_general" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="aaaa/mm/dd"
+                        android:id="@+id/txt_cabeceraFechaDatos"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general"
+                        android:typeface="monospace"
+                        android:textStyle="italic" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/elemento_cabeceraObra_txt_visitas"
+                        android:id="@+id/txt_cabeceraVisitas"
+                        android:paddingRight="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_general" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="305"
+                        android:id="@+id/txt_cabeceraVisitasDatos"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general"
+                        android:typeface="monospace"
+                        android:textStyle="italic" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/elemento_cabeceraObra_txt_pendiente"
+                android:id="@+id/txtCabObraValoracionPendiente"
+                android:textColor="@color/texto_resaltado"
+                android:textStyle="bold|italic"
+                android:padding="2dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/layoutCabObraSeguimiento">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:id="@+id/imgCabObraSeguimiento"
+                android:src="@drawable/ic_bandera" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cdelgado.mimartillocom.VentanaBusquedaObra">
+
+    <item android:id="@+id/menu_repetir_busqueda"
+        android:title="@string/opcionMenu_repetir_busqueda"
+        android:icon="@drawable/ic_refrescar"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_ordenar_obras"
+        android:title="@string/opcionMenu_ordenar_resultados"
+        android:icon="@drawable/ic_ordenar"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/menu_ordenar_titulo_asc"
+                android:title="@string/opcionMenu_ordenar_titulo_asc"
+                android:icon="@drawable/ic_ordenar" />
+
+            <item
+                android:id="@+id/menu_ordenar_distancia_asc"
+                android:title="@string/opcionMenu_ordenar_distancia_asc"
+                android:icon="@drawable/ic_ordenar" />
+
+            <item
+                android:id="@+id/menu_ordenar_tipo_asc"
+                android:title="@string/opcionMenu_ordenar_tipo_asc"
+                android:icon="@drawable/ic_ordenar" />
+
+            <item
+                android:id="@+id/menu_ordenar_realizacion_asc"
+                android:title="@string/opcionMenu_ordenar_realizacion_asc"
+                android:icon="@drawable/ic_ordenar" />
+
+            <item
+                android:id="@+id/menu_ordenar_realizacion_desc"
+                android:title="@string/opcionMenu_ordenar_realizacion_desc"
+                android:icon="@drawable/ic_ordenar" />
+
+            <item
+                android:id="@+id/menu_ordenar_antiguedad_desc"
+                android:title="@string/opcionMenu_ordenar_antiguedad_desc"
+                android:icon="@drawable/ic_ordenar" />
+
+            <item
+                android:id="@+id/menu_ordenar_visitas_desc"
+                android:title="@string/opcionMenu_ordenar_visitas_desc"
+                android:icon="@drawable/ic_ordenar" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/menu_resetear_formulario"
+        android:title="@string/opcionMenu_resetear_formulario"
+        android:icon="@drawable/ic_borrar"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_cerrar_sesion"
+        android:title="@string/opcionMenu_cerrar_sesion"
+        android:icon="@drawable/ic_salir"
+        app:showAsAction="never"/>
+
+</menu>

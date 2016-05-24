@@ -1,0 +1,38 @@
+<resources>
+
+    <color name="fondo_contenido">#1c2d46</color>
+    <color name="fondo_contenidoItemSelected">#0b121c</color>
+    <color name="fondo_actionBar">#1c2d46</color>
+    <color name="fondo_menu_desplegable">#bdc8d3</color>
+    <color name="fondo_camposTexto">#ffffff</color>
+    <color name="fondo_botones">#d7d7d7</color>
+    <color name="fondo_botones_grises">#d6d3ce</color>
+    <color name="borde_botones_grises">#000000</color>
+    <color name="fondo_botones_amarillos">#ffffcc</color>
+    <color name="borde_botones_amarillos">#a5a5a5</color>
+    <color name="borde_circulo_perfil">#a5a5a5</color>
+
+    <color name="texto_item">#1685c5</color>
+    <color name="texto_general">#000000</color>
+    <color name="texto_cabeceraPerfil">#ffffff</color>
+    <color name="texto_tabs">#ffffff</color>
+    <color name="texto_resaltado">#ff0000</color>
+    <color name="texto_resaltado2">#6699CC</color>
+    <color name="texto_camposTexto">#000000</color>
+    <color name="texto_clickable">#1685c5</color>
+    <color name="texto_botones">#000000</color>
+    <color name="texto_ayudas_camposTexto">#a5a5a5</color>
+    <color name="texto_actionBar">#ffffff</color>
+    <color name="texto_seguidoresObra">#ffffff</color>
+    <color name="texto_elementoSpinner">#000000</color>
+
+    <color name="rojo">#ff0000</color>
+    <color name="blanco">#ffffff</color>
+    <color name="amarillo">#fffc00</color>
+    <color name="negro">#000000</color>
+    <color name="azul">#6699CC</color>
+    <color name="verde">#35bc34</color>
+    <color name="gris">#a5a5a5</color>
+    <color name="oro">#bf8f37</color>
+
+</resources>

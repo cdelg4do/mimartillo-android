@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tbr_tipo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false">
+
+    <TextView
+        android:id="@+id/txt_nombreTipo"
+        android:padding="4dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Nombre del tipo"
+        android:textColor="@color/negro"
+        android:singleLine="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="monospace"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:layout_toLeftOf="@+id/btn_eliminarTipo"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerVertical="true" />
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_eliminarespecialidad"
+        android:id="@+id/btn_eliminarTipo"
+        android:padding="5dp"
+        android:adjustViewBounds="false"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

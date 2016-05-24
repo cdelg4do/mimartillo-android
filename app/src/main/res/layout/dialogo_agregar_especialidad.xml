@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt_seleccion"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="@string/dialogo_agregarEspecialidad_txt_info"
+        android:textColor="@color/negro"
+        android:layout_margin="10dp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_seleccionTipo"
+        android:orientation="vertical"
+        android:layout_below="@+id/txt_seleccion"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialogo_agregarEspecialidad_txt_actividad"
+                android:id="@+id/textView50"
+                android:textColor="@color/negro" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnActividad"
+                android:spinnerMode="dialog"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-13dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialogo_agregarEspecialidad_txt_categoria"
+                android:id="@+id/textView46"
+                android:textColor="@color/negro" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnCategoria"
+                android:spinnerMode="dialog"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-13dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialogo_agregarEspecialidad_txt_tipo"
+                android:id="@+id/textView48"
+                android:textColor="@color/negro" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnTipo"
+                android:spinnerMode="dialog"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:layout_marginTop="-13dp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_botones"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/layout_seleccionTipo"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@android:string/cancel"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@android:string/ok"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

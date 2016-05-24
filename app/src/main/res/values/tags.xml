@@ -1,0 +1,13 @@
+<resources>
+    <item name="TAG_FAVORITES_STATUS" type="id"/>
+    <item name="TAG_FAVORITES_ID" type="id"/>
+    <item name="TAG_FAVORITES_POS" type="id"/>
+
+    <item name="TAG_FOLLOWING_STATUS" type="id"/>
+    <item name="TAG_WORK_ID" type="id"/>
+    <item name="TAG_WORK_POS" type="id"/>
+
+    <item name="TAG_POS_ACTIVIDAD" type="id"/>
+    <item name="TAG_POS_CATEGORIA" type="id"/>
+    <item name="TAG_POS_TIPO" type="id"/>
+</resources>

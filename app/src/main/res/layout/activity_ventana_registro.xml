@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cdelgado.mimartillocom.VentanaAcercaDe"
+    android:background="@color/fondo_contenido">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondo_contenido"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/iconoApp"
+                    android:src="@mipmap/app_icono"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nuevo usuario particular/profesional"
+                    android:id="@+id/txtTipoCuenta"
+                    android:textColor="@color/amarillo"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp" />
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtEmail"
+                        android:background="@color/blanco"
+                        android:hint="@string/VentanaRegistro_txt_emailHint"
+                        android:padding="10dp"
+                        android:inputType="textEmailAddress" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtNombre"
+                        android:background="@color/blanco"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/VentanaRegistro_txt_nombreHint"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtPassword1"
+                        android:background="@color/blanco"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/VentanaRegistro_txt_passwordHint"
+                        android:padding="10dp"
+                        android:inputType="textPassword" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtPassword2"
+                        android:background="@color/blanco"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/VentanaRegistro_txt_password2Hint"
+                        android:padding="10dp"
+                        android:inputType="textPassword" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaRegistro_txt_condiciones"
+                        android:id="@+id/chkCondiciones"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="false"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/blanco" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaRegistro_txt_verCondiciones"
+                        android:id="@+id/txtVerCondiciones"
+                        android:textStyle="bold"
+                        android:textColor="@color/blanco"
+                        android:layout_gravity="center_horizontal" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaRegistro_txt_btnCrearCuenta"
+                        android:id="@+id/btnCrearCuenta"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

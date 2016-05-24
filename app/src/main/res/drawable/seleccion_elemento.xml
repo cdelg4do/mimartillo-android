@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+    <!-- selected -->
+    <item android:drawable="@color/fondo_menu_desplegable" android:state_focused="true" android:state_pressed="false"/> <!-- Inicial, sin seleccionar -->
+    <item android:drawable="@color/amarillo" android:state_pressed="true"/> <!-- cuando el dedo está encima de otro elemento -->
+    <item android:drawable="@color/fondo_contenidoItemSelected" android:state_activated="true"/>
+    <item android:drawable="@color/gris" android:state_checked="true"/>
+    <item android:drawable="@color/verde" android:state_selected="true"/> <!-- cuando el dedo está encima del elemento -->
+
+    <item android:drawable="@color/fondo_menu_desplegable" android:state_activated="false"/>
+</selector>

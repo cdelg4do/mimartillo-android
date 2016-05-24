@@ -1,0 +1,397 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TabHost android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondo_contenido">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs" />
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent" >
+
+                <LinearLayout android:id="@+id/tabCriterioBusqueda"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp">
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/scrollView3">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/VentanaBusqueda_txt_selecciona"
+                                    android:id="@+id/textView8"
+                                    android:textStyle="bold|italic"
+                                    android:textColor="@color/amarillo"
+                                    android:textSize="18sp" />
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/layoutTipologia"
+                                android:padding="5dp"
+                                android:background="@drawable/fondo_blanco_layout_redondeado"
+                                android:layout_marginTop="5dp">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/layoutChkTipologia"
+                                    android:clickable="true"
+                                    android:onClick="onClick_LayoutCheckBox">
+
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/VentanaBusqueda_txt_busquedaPorTipologia"
+                                        android:id="@+id/chkTipologia"
+                                        android:checked="false" />
+                                </FrameLayout>
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/layoutOpcionesTipologia"
+                                    android:padding="5dp">
+
+                                    <TableRow
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/VentanaBusqueda_txt_actividad"
+                                            android:id="@+id/textView10"
+                                            android:textColor="@color/negro" />
+
+                                        <Spinner
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/spnActividad"
+                                            android:spinnerMode="dialog"
+                                            android:layout_marginLeft="5dp" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/VentanaBusqueda_txt_categoria"
+                                            android:id="@+id/textView11"
+                                            android:textColor="@color/negro" />
+
+                                        <Spinner
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/spnCategoria"
+                                            android:spinnerMode="dialog"
+                                            android:layout_marginLeft="5dp" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/VentanaBusqueda_txt_tipo"
+                                            android:id="@+id/textView12"
+                                            android:textColor="@color/negro" />
+
+                                        <Spinner
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/spnTipo"
+                                            android:spinnerMode="dialog"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp" />
+                                    </TableRow>
+                                </TableLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/layoutProximidad"
+                                android:padding="5dp"
+                                android:background="@drawable/fondo_blanco_layout_redondeado"
+                                android:layout_marginTop="5dp">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/layoutChkProximidad"
+                                    android:clickable="true"
+                                    android:onClick="onClick_LayoutCheckBox">
+
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/VentanaBusqueda_txt_busquedaPorProximidad"
+                                        android:id="@+id/chkProximidad"
+                                        android:checked="false" />
+                                </FrameLayout>
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/layoutDistancia"
+                                    android:padding="5dp" >
+
+                                    <TableRow
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:padding="5dp" >
+
+                                        <SeekBar
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/skbDistancia"
+                                            android:max="1000"
+                                            android:indeterminate="false"
+                                            android:progress="2"
+                                            android:nestedScrollingEnabled="false"
+                                            android:mirrorForRtl="false"
+                                            android:minWidth="200dp"
+                                            android:layout_marginLeft="20dp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:id="@+id/txtDistancia"
+                                            android:textColor="@color/negro"
+                                            android:layout_marginLeft="10dp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/general_txt_unidadDistancia"
+                                            android:id="@+id/txtUnidad"
+                                            android:textColor="@color/negro"
+                                            android:layout_marginLeft="5dp" />
+
+                                    </TableRow>
+
+                                </TableLayout>
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/rgrOpcionesUbicacion">
+
+                                    <RadioButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/VentanaBusqueda_txt_desdeUbicacion"
+                                        android:id="@+id/rbtnUbicacion"
+                                        android:checked="false" />
+
+                                    <RadioButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/VentanaBusqueda_txt_desdePoblacion"
+                                        android:id="@+id/rbtnPoblacion"
+                                        android:checked="false" />
+
+                                </RadioGroup>
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/layoutPoblaciones">
+
+                                    <TableRow
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:paddingTop="5dp"
+                                        android:paddingLeft="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/general_txt_provincia"
+                                            android:id="@+id/textView13"
+                                            android:textColor="@color/negro" />
+
+                                        <Spinner
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/spnProvincia"
+                                            android:spinnerMode="dialog"
+                                            android:layout_marginLeft="5dp" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:padding="5dp" >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/general_txt_poblacion"
+                                            android:id="@+id/textView14"
+                                            android:textColor="@color/negro" />
+
+                                        <Spinner
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/spnPoblacion"
+                                            android:spinnerMode="dialog"
+                                            android:layout_marginLeft="5dp"
+                                            android:focusable="false" />
+                                    </TableRow>
+                                </TableLayout>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/layoutTexto"
+                                android:padding="5dp"
+                                android:background="@drawable/fondo_blanco_layout_redondeado"
+                                android:layout_marginTop="5dp" >
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/layoutChkTexto"
+                                    android:clickable="true"
+                                    android:onClick="onClick_LayoutCheckBox">
+
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/VentanaBusqueda_txt_busquedaPorTexto"
+                                        android:id="@+id/chkTexto"
+                                        android:checked="false" />
+                                </FrameLayout>
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/layoutTextoBusqueda"
+                                    android:padding="5dp" >
+
+                                    <TableRow
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:padding="5dp" >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/VentanaBusqueda_txt_texto"
+                                            android:id="@+id/textView15"
+                                            android:textColor="@color/negro" />
+
+                                        <EditText
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/etxtTextoBusqueda"
+                                            android:inputType="text"
+                                            android:hint="@string/VentanaBusqueda_txt_textoHint"
+                                            android:layout_marginLeft="10dp" />
+
+                                    </TableRow>
+
+                                </TableLayout>
+
+                            </LinearLayout>
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/layoutBotonesBusqueda"
+                                android:padding="5dp" >
+
+                                <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="5dp"
+                                    android:gravity="center_horizontal">
+
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/VentanaBusqueda_txt_btnReset"
+                                        android:id="@+id/btnReset"
+                                        android:layout_marginRight="50dp" />
+
+                                    <Button
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/VentanaBusqueda_txt_btnBuscar"
+                                        android:id="@+id/btnBuscar" />
+                                </TableRow>
+                            </TableLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+
+                <LinearLayout android:id="@+id/tabResultadoBusqueda"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp">
+
+                    <ListView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:divider="@color/amarillo"
+                        android:dividerHeight="0dp"
+                        android:id="@+id/listaObras" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>

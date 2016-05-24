@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/fondo_contenido">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo_blanco_layout_redondeado"
+        android:id="@+id/layoutMarcoInterior"
+        android:padding="5dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutValCabecera">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layoutCabProAvatar" >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgValAvatar"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/default_avatar"
+                        android:layout_margin="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:border_width="1dp"
+                        app:border_color="@color/borde_circulo_perfil" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="2dp"
+                    android:paddingBottom="2dp"
+                    android:id="@+id/layoutCabProDatos">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre Usuario"
+                        android:id="@+id/txtValNombre"
+                        android:padding="2dp"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/negro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(correo@ofuscado.usuario)"
+                        android:id="@+id/txtValEmail"
+                        android:padding="2dp"
+                        android:textColor="@color/texto_general"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DD/MM/AAAA hh:mm"
+                        android:id="@+id/txtValFecha"
+                        android:padding="2dp"
+                        android:textColor="@color/texto_general"
+                        android:layout_marginTop="5dp"
+                        android:typeface="monospace" />
+
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/elemento_valoracion_txt_detalles"
+            android:id="@+id/txtValDetalles"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@drawable/fondo_blanco_borde_negro_layout_rectangular"
+            android:id="@+id/layoutValObra"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título obra"
+                android:id="@+id/txtValTituloObra"
+                android:textColor="@color/texto_general"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo obra"
+                android:id="@+id/txtValTipoObra"
+                android:typeface="monospace"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/texto_general" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/elemento_valoracion_txt_calificacionYcoste"
+            android:id="@+id/txtValCalificacionPresupuesto"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:background="@drawable/fondo_blanco_borde_negro_layout_rectangular"
+            android:id="@+id/layoutValVotosPrecio"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingBottom="2dp"
+                android:id="@+id/layoutValVotos">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/elemento_valoracion_txt_calidad"
+                        android:id="@+id/txtValCalidad"
+                        android:paddingRight="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_general" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0,00"
+                        android:id="@+id/txtValCalidadDatos"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general" />
+
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rtnValCalidad"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:paddingLeft="2dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/elemento_valoracion_txt_precio"
+                        android:id="@+id/txtValPrecio"
+                        android:paddingRight="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_general" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0,00"
+                        android:id="@+id/txtValPrecioDatos"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general" />
+
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rtnValPrecio"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:paddingLeft="2dp" />
+                </TableRow>
+
+            </TableLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutValPrecio"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/layoutValVotos">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0,00 €"
+                    android:id="@+id/txtValPrecioMoneda"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="false"
+                    android:textColor="@color/texto_general"
+                    android:gravity="right" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/elemento_valoracion_txt_comentario"
+            android:id="@+id/txtValComentario"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@drawable/fondo_blanco_borde_negro_layout_rectangular"
+            android:id="@+id/layoutValComentario"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comentario del usuario"
+                android:id="@+id/txtValComentarioDatos"
+                android:textColor="@color/texto_general"
+                android:textStyle="italic" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

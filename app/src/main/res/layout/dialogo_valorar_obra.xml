@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView5" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dialog_layoutAdjudicatario"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/dialog_tituloInfoParaMostrar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:text="Adjudicatario / Obra:"
+                    android:textColor="@color/negro"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;Nombre del Profesional / Título de la obra>"
+                    android:id="@+id/dialog_txtInfoParaMostrar"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dialog_preguntaObra"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/dialogo_valorarObra_txt_coste"
+                android:textColor="@color/negro"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/dialog_layoutAdjudicatario"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dialog_layoutCoste"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentEnd="false"
+                android:layout_toRightOf="@+id/dialog_preguntaObra"
+                android:layout_alignTop="@+id/dialog_preguntaObra">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/simbolo_moneda"
+                    android:id="@+id/dialog_simboloDelante"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dialog_txtCoste"
+                    android:hint="@string/dialogo_valorarObra_txt_opcional"
+                    android:background="@drawable/recuadro_gris_fondo_blanco"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/simbolo_moneda"
+                    android:id="@+id/dialog_simboloDetras"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialogo_valorarObra_txt_valoracion"
+                android:id="@+id/dialog_preguntaValoracion"
+                android:layout_below="@+id/dialog_layoutCoste"
+                android:textColor="@color/negro"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/dialog_layoutValoracion"
+                android:layout_below="@+id/dialog_preguntaValoracion"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dialogo_valorarObra_txt_calidad"
+                        android:id="@+id/dialog_txtCalidad"
+                        android:layout_margin="5dp" />
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dialog_rtnCalidad"
+                        android:numStars="5"
+                        android:stepSize="1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dialogo_valorarObra_txt_precio"
+                        android:id="@+id/dialog_txtPrecio"
+                        android:layout_margin="5dp" />
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dialog_rtnPrecio"
+                        android:numStars="5"
+                        android:stepSize="1" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialogo_valorarObra_txt_comentario"
+                android:id="@+id/dialog_preguntaComentario"
+                android:layout_below="@+id/dialog_layoutValoracion"
+                android:textColor="@color/negro"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dialog_layoutComentario"
+                android:layout_below="@+id/dialog_preguntaComentario"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:textSize="14sp"
+                    android:typeface="serif"
+                    android:id="@+id/dialog_txtComentario"
+                    android:textColor="@color/texto_general"
+                    android:lines="4"
+                    android:gravity="top|left"
+                    android:hint="@string/dialogo_valorarObra_txt_comentarioHint"
+                    android:background="@drawable/recuadro_gris_fondo_blanco"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_botones"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/dialog_layoutComentario"
+                android:paddingBottom="10dp">
+
+                <Button
+                    android:id="@+id/dialog_btnCancelar"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@android:string/cancel" />
+
+                <Button
+                    android:id="@+id/dialog_btnAceptar"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@android:string/ok" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

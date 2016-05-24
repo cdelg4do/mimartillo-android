@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--
+    RECURSOS DE TEXTO UTILIZADOS POR LA APLICACIÓN
+
+    * CÓDIGO:       en-rUS
+
+    * IDIOMA:       Inglés
+
+    * LOCALIZACIÓN: EEUU
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    SECCIÓN #1: TEXTO DE LAS OPCIONES DE MENÚ (drawers, menús de ventana y menús contextuales)
+    ================================================================================================
+-->
+
+    <string name="opcionDrawer_perfil">Profile</string>
+    <string name="opcionDrawer_misObrasAbiertas">My open works</string>
+    <string name="opcionDrawer_misObrasCerradas">Closed works history</string>
+    <string name="opcionDrawer_nuevaObra">Create new work</string>
+    <string name="opcionDrawer_misFavoritos">My favorites</string>
+    <string name="opcionDrawer_buscarProfesional">Professional search</string>
+    <string name="opcionDrawer_acercaDe">About miMartillo.com</string>
+    <string name="opcionDrawer_misObrasAdjudicadas">My assigned works</string>
+    <string name="opcionDrawer_misObrasCompletadas">Finished works history</string>
+    <string name="opcionDrawer_misObrasSeguidas">Works I am following</string>
+    <string name="opcionDrawer_misValoraciones">My votes</string>
+    <string name="opcionDrawer_buscarObra">Work search</string>
+    <string name="opcionDrawer_accesoPremium">FREE! Premium Access</string>
+
+    <string name="opcionMenu_cerrar_sesion">Log off</string>
+    <string name="opcionMenu_actualizar">Refresh</string>
+    <string name="opcionMenu_ver_detalles">View details</string>
+    <string name="opcionMenu_cerrar_obra">Close work</string>
+    <string name="opcionMenu_eliminar_obra">Remove work</string>
+    <string name="opcionMenu_valorar_obra">Vote work</string>
+    <string name="opcionMenu_agregar_favorito">Add favorite</string>
+    <string name="opcionMenu_eliminar_favorito">Remove favorite</string>
+    <string name="opcionMenu_repetir_busqueda">Repeat search</string>
+    <string name="opcionMenu_resetear_formulario">Reset form</string>
+    <string name="opcionMenu_seguir_obra">Follow work</string>
+    <string name="opcionMenu_ignorar_obra">Unfollow work</string>
+
+    <string name="opcionMenu_ordenar_resultados">Sort results…</string>
+    <string name="opcionMenu_ordenar_obras">Sort works…</string>
+    <string name="opcionMenu_ordenar_titulo_asc">By title (A)</string>
+    <string name="opcionMenu_ordenar_distancia_asc">By distance (A)</string>
+    <string name="opcionMenu_ordenar_tipo_asc">By work type (A)</string>
+    <string name="opcionMenu_ordenar_realizacion_asc">By execution date (A)</string>
+    <string name="opcionMenu_ordenar_realizacion_desc">By execution date (D)</string>
+    <string name="opcionMenu_ordenar_antiguedad_desc">By creation date (D)</string>
+    <string name="opcionMenu_ordenar_visitas_desc">By views (D)</string>
+    <string name="opcionMenu_ordenar_nombre_asc">By name (A)</string>
+    <string name="opcionMenu_ordenar_poblacion_asc">By city (A)</string>
+    <string name="opcionMenu_ordenar_provincia_asc">By province (A)</string>
+    <string name="opcionMenu_ordenar_votos_desc">By votes (D)</string>
+    <string name="opcionMenu_ordenar_favoritos">Sort favorites…</string>
+    <string name="opcionMenu_ordenar_favoritos_despues">Favorites last</string>
+    <string name="opcionMenu_ordenar_valoraciones">Sort votes…</string>
+    <string name="opcionMenu_ordenar_solicitante_asc">By owner (A)</string>
+    <string name="opcionMenu_ordenar_calidad_desc">By quality (D)</string>
+    <string name="opcionMenu_ordenar_precio_desc">By cost (D)</string>
+    <string name="opcionMenu_ordenar_fecha_desc">By date (D)</string>
+    <string name="opcionMenu_ordenar_favoritos_primero">Favorites first</string>
+
+
+<!--
+    SECCIÓN #2: MENSAJES ASOCIADOS A SERVICIOS WEB (toasts, título y contenido de diálogos)
+    ================================================================================================
+-->
+
+    <!-- Títulos de las operaciones que se realizan mediante servicios web -->
+    <string name="titulo_servicio_desconocido">Unknown operation</string>
+    <string name="titulo_servicio_LOGIN">Log in</string>
+    <string name="titulo_servicio_CHECK_SESSION">User authentication</string>
+    <string name="titulo_servicio_REGISTER">User registration</string>
+    <string name="titulo_servicio_NEW_WORK">New work</string>
+    <string name="titulo_servicio_INITIAL_PARAMETERS_NEW_WORK">Form load</string>
+    <string name="titulo_servicio_MY_WORKS">Work list</string>
+    <string name="titulo_servicio_WORK_INFO">Work details</string>
+    <string name="titulo_servicio_PROFESSIONAL_SEARCH">Professional search</string>
+    <string name="titulo_servicio_PROFESSIONAL_INFO">Professional info</string>
+    <string name="titulo_servicio_MODIFY_FAVORITES">Add/Remove favorite</string>
+    <string name="titulo_servicio_MY_FAVORITES">Favorite professionals</string>
+    <string name="titulo_servicio_SPINNER_VALUES">Form load</string>
+    <string name="titulo_servicio_USER_PROFILE">User profile</string>
+    <string name="titulo_servicio_WORK_FOLLOWERS">Work followers</string>
+    <string name="titulo_servicio_CLOSE_WORK">Close work</string>
+    <string name="titulo_servicio_VOTE_WORK">Vote work</string>
+    <string name="titulo_servicio_REMOVE_WORK">Remove work</string>
+    <string name="titulo_servicio_MY_WORKS_PRO">Work list</string>
+    <string name="titulo_servicio_WORK_SEARCH">Work search</string>
+    <string name="titulo_servicio_MY_VOTES">Received votes</string>
+    <string name="titulo_servicio_PREMIUM_ACCESS">Premium Access</string>
+    <string name="titulo_servicio_FOLLOW_WORK">Follow work</string>
+    <string name="titulo_servicio_UNFOLLOW_WORK">Unfollow work</string>
+    <string name="titulo_servicio_PROFESSIONAL_PROFILE">User profile</string>
+    <string name="titulo_servicio_PASSWORD_RESET">Password reset</string>
+
+    <!-- Texto genérico del diálogo de progreso (mientras dura la tarea en segundo plano -->
+    <string name="txt_progresoSegundoPlano">Connecting…</string>
+
+    <!-- Mensaje de error inesperado -->
+    <string name="msg_generico_ErrorInesperado">An unexpected error happened, please contact Support if the problem persists.</string>
+
+    <!-- Mensajes de error de tarea en segundo plano (falo de la tarea, timeout, respuesta incorrecta) -->
+    <string name="msg_generico_ErrorFalloTarea">There were problems processing the server response. This might be due to some maintenance operation, please try again within a few minutes.\n\nContact Support if the problem persists.</string>
+	<string name="msg_generico_ErrorTimeoutTarea">There are problems connecting to the server, please check your Internet connection or try again within a few minutes.</string>
+    <string name="msg_generico_ErrorRespuestaIncorrecta">There were problems processing the server response, contact Support if the problem persists.</string>
+
+    <!-- Mensajes de error de sesion -->
+    <string name="msg_generico_ErrorSesionInvalida">The stored credentials are no longer valid. Please log in again.</string>
+    <string name="msg_generico_ErrorSesionExpirada">The session stored in this device has expired. Please log in again.</string>
+    <string name="msg_generico_ErrorUsuarioDeshabilitado1">The user</string>
+    <string name="msg_generico_ErrorUsuarioDeshabilitado2">is disabled. If you already enabled your account after registration, please contact Support.</string>
+
+    <!-- Mensajes de alta de usuario -->
+    <string name="msg_RegistroUsuario_ERR_UsuarioRepetido">There is already a user created with that email address.</string>
+    <string name="msg_RegistroUsuario_ERR_EnviarCorreo">Your user account has been created, but there were problems sending you an email with instructions to activate it.\n\nPlease contact Support to solve this problem.</string>
+    <string name="msg_RegistrarUsuario_OK_UsuarioCreado">Your user account has been created.\n\nWe sent you an email with instructions to activate it.</string>
+
+    <!-- Mensajes de inicio de sesión -->
+    <string name="msg_Login_ERR_PasswordIncorrecto">Incorrect user name or password.</string>
+    <string name="titulo_Login_OK_FalloAvatar">Profile picture</string>
+    <string name="msg_Login_OK_FalloAvatar">There were problems loading your profile picture.\nRemember you can set a new picture from the profile screen.</string>
+
+    <!-- Mensajes de búsqueda de obras -->
+    <string name="msg_BuscarObras_OK_SinCoincidencias">No works match your criteria.</string>
+    <string name="msg_BuscarObras_OK_HayCoincidencias">works match your criteria.</string>
+
+    <!-- Mensajes de añadir/eliminar favorito -->
+    <string name="msg_AgregarFavorito_OK_FavoritoAgregado">Professional added to your favorites.</string>
+    <string name="msg_EliminarFavorito_OK_FavoritoEliminado">Professional removed from your favorites.</string>
+
+    <!-- Mensajes de buscar profesional -->
+    <string name="msg_BuscarProfesional_OK_SinCoincidencias">No professionals match your criteria.</string>
+    <string name="msg_BuscarProfesional_OK_HayCoincidencias">professionals match your criteria.</string>
+
+    <!-- Mensajes de Mis Obras -->
+    <string name="msg_MisObras_OK_ObrasAbiertas">Currently you do not have any open work.  Use the \"Create new work\" option from the drawer to find new works.</string>
+    <string name="msg_MisObras_OK_ObrasCerradas">You have not closed any work yet.</string>
+
+    <!-- Mensajes de Mis Obras Pro -->
+    <string name="msg_MisObrasPro_OK_ObrasAdjudicadas">Currently you do not have any assigned, unfinished work . Use the \"Work search\" option from the drawer to find new works.</string>
+    <string name="msg_MisObrasPro_OK_ObrasCompletadas">You have not finished any work yet. Use the \"Work search\" option from the drawer to find new works.</string>
+    <string name="msg_MisObrasPro_OK_ObrasSeguidas">Currently you are not following any work. Use the \"Work search\" option from the drawer to find new works.</string>
+
+    <!-- Mensajes de Mis Favoritos -->
+    <string name="msg_MisFavoritos_OK_ListadoFavoritos">You have not added any professional to your favorites yet.</string>
+
+    <!-- Mensajes de Mis Valoraciones -->
+    <string name="msg_MisValoraciones_OK_ProfesionalTitular">You have not received any vote yet.</string>
+
+    <!-- Mensajes de información de obra -->
+    <string name="msg_InfoObra_ERR_ObraInexistente">This work no longer exists, it might have been removed by its owner.\n\nTry refreshing the work list.</string>
+
+    <!-- Mensajes de error de Cierre de obra -->
+    <string name="msg_CerrarObra_ERR_ObraInexistente">This work no longer exists, try refreshing the Open Works list.</string>
+    <string name="msg_CerrarObra_ERR_ObraYaCerrada">This work was already closed, try refreshing the work list.</string>
+    <string name="msg_CerrarObra_ERR_UsuarioNoAutorizado">This work can be closed by its owner only.</string>
+    <string name="msg_CerrarObra_ERR_AdjudicatarioInexistente">This professional no longer exists, try refreshing the Open Works list.</string>
+    <string name="msg_CerrarObra_OK_ObraCerrada">Succesfully closed work.</string>
+
+    <!-- Mensajes de valorar obra -->
+    <string name="msg_ValorarObra_ERR_OperacionDenegada">Either you do not have permissions to vote this work or the work no longer exists, try refreshing the work list.</string>
+    <string name="msg_ValorarObra_OK_ValoracionRealizada">Your vote has been registered. Thanks!</string>
+
+    <!-- Mensajes de seguir/olvidar obra -->
+    <string name="msg_SeguirObra_ERR_NoEsPremium">Only Premium professionals are able to follow a work.\n\nContact Support to learn how to get your Premium access and enjoy its exclusive benefits.</string>
+    <string name="msg_SeguirObra_ERR_ObraInexistente">This work no longer exists, it might have been removed by its owner.\n\nTry refreshing the work list.</string>
+    <string name="msg_SeguirObra_ERR_ObraYaCerrada">This work is closed, probably its owner already assigned it.\n\nTry refreshing the work list.</string>
+    <string name="msg_SeguirObra_ERR_LimiteSeguidores">We are sorry,but this work has reached its limit of followers.\n\nIt might lose some followers in the future, give it a try later.</string>
+    <string name="msg_SeguirObra_OK_ObraSeguida">Now you are following this work.</string>
+    <string name="msg_OlvidarObra_OK_ObraOlvidada">You are no longer following this work.</string>
+
+    <!-- Mensajes de eliminar obra -->
+    <string name="msg_EliminarObra_ERR_ObraInexistente">This work no longer exists (it might have been removed previously), try refreshing the work list.</string>
+    <string name="msg_EliminarObra_ERR_OperacionNoAutorizada">This work can be removed by its owner only.</string>
+    <string name="msg_EliminarObra_ERR_OperacionCancelada">The work cannot be removed because it was already assigned to a professional.</string>
+    <string name="msg_EliminarObra_OK_ObraEliminada">Succesfully removed work.</string>
+
+    <!-- Mensajes de información del profesional -->
+    <string name="msg_InfoProfesional_ERR_ProfesionalInexistente">This professional no longer exists (it might have been removed), try refreshing the professional list.</string>
+
+    <!-- Mensajes de perfil de usuario particular -->
+    <string name="msg_PerfilParticular_ERR_PasswordActualIncorrecto">The current password you provided is not correct.</string>
+    <string name="titulo_PerfilParticular_OK_FalloImagen">Profile picture</string>
+    <string name="msg_PerfilParticular_OK_FalloImagen">There were problems loading your profile picture.\nPlease try setting a new one.</string>
+    <string name="msg_PerfilParticular_OK_CabeceraActualizada">Your profile picture has been updated (changes might not be visible until you log in again).</string>
+    <string name="msg_PerfilParticular_OK_PasswordActualizado">Your password has been updated.</string>
+    <string name="msg_PerfilParticular_OK_ContactoActualizado">Your contact info has been updated.</string>
+    <string name="msg_PerfilParticular_OK_OtrosActualizado">The info has been updated.</string>
+
+    <!-- Mensajes de perfil de usuario profesional -->
+    <string name="msg_PerfilProfesional_ERR_PasswordActualIncorrecto">The current password you provided is not correct.</string>
+    <string name="titulo_PerfilProfesional_OK_FalloImagen">Profile picture</string>
+    <string name="msg_PerfilProfesional_OK_FalloImagen">There were problems loading your profile picture.\nPlease try setting a new one.</string>
+    <string name="msg_PerfilProfesional_OK_CuentaActualizada">Your account info has been updated (changes might not be visible until you log in again).</string>
+    <string name="msg_PerfilProfesional_OK_PasswordActualizado">Your password has been updated.</string>
+    <string name="msg_PerfilProfesional_OK_ContactoActualizado">Your contact info has been updated.</string>
+    <string name="msg_PerfilProfesional_OK_EspecialidadesActualizadas">Your specialities have been updated.</string>
+    <string name="msg_PerfilProfesional_OK_OtrosActualizado">The info has been updated.</string>
+
+    <!-- Mensajes de reiniciar contraseña -->
+    <string name="msg_ResetPassword_ERR_UsuarioInexistente">That user does not exist</string>
+    <string name="msg_ResetPassword_ERR_EnviarCorreo">There were problems sending you an email with instructions to reset your password, please try again.\n\nIf the problem persists, please contact Support.</string>
+    <string name="msg_ResetPassword_OK_CorreoEnviado">We just sent you an email with istructions to reset your password</string>
+
+    <!-- Mensajes de Activar acceso Premium -->
+    <string name="msg_AccesoPremium_OK_Activado">Your Premium access has been enabled.\n\nStart enjoying its exclusive benefits right now!</string>
+    <string name="msg_AccesoPremium_OK_Desactivado">Your Premium access has been disabled.</string>
+    <string name="msg_AccesoPremium_OK_PromocionFinalizada">We are sorry, this offer is no longer available.\n\nIf you want to modify your Premium access, please contact our Support team.</string>
+
+
+<!--
+    SECCIÓN #3: RESTO DE MENSAJES (toasts, título y contenido de diálogos)
+    ================================================================================================
+-->
+
+    <string name="general_txt_dispositivoSinConexion">Verify your internet connection and try again.</string>
+    <string name="general_txt_msgCierreSesion">Your session has ended</string>
+    <string name="general_txt_emailInvalido">The email address is not valid</string>
+    <string name="general_txt_passwordInvalido">The new password must be between 6 and 16 characters long</string>
+    <string name="general_txt_imagenPerfil">Showing profile picture</string>
+    <string name="general_txt_imagenObra">Showing work picture</string>
+    <string name="general_txt_msgAccesibilidad_drawerOpen">Opening drawer</string>
+    <string name="general_txt_msgAccesibilidad_drawerClose">Closing drawer</string>
+    <string name="general_txt_msgUbicacionDesactivada_titulo">Location service disabled</string>
+    <string name="general_txt_msgUbicacionDesactivada">The app needs access to your device location in order to provide the most accurate information.\n\nDo you want to turn on the location service now?</string>
+    <string name="general_txt_valorarObra_msgCosteIncorrecto">The provided cost is not valid</string>
+    <string name="general_txt_msgFalloSeleccionImagen">The selected picture could not be loaded</string>
+
+    <string name="dialogo_agregarEspecialidad_txt_msgConfirmacion">Your selection has been added to the list.  Do not forget to push \"Update specialities\" for the changes to take effect.</string>
+    <string name="dialogo_cerrarObra_txt_msgOperacionCancelada">Close work cancelled</string>
+    <string name="dialogo_valorarObra_txt_msgFormulario1">Your opinion about the work quality (1: awful, 5: superb)</string>
+    <string name="dialogo_valorarObra_txt_msgFormulario2">Your opinion about the work cost (1: too expensive, 5: very cheap)</string>
+    <string name="dialogo_valorarObra_txt_msgFormulario3">Your remarks about the work or the professional</string>
+    <string name="dialogo_valorarObra_txt_msgOperacionCancelada">Vote work cancelled</string>
+    <string name="dialogo_valorarObra_txt_msgObraNoAsignada">Unable to vote this work (it was not assignet to any professional)</string>
+    <string name="dialogo_valorarObra_txt_msgObraYaValorada">Unable to vote this work (it was already voted)</string>
+
+    <string name="Utils_aplicacionExterna_txt_msgSinLlamadas">We are sorry, your device does not have any application to make calls</string>
+    <string name="Utils_aplicacionExterna_txt_msgSinCorreos">We are sorry, your devide does not have any application to send emails</string>
+    <string name="Utils_aplicacionExterna_txt_msgSinNavegador">We are sorry, your device does not have any application to view web pages</string>
+    <string name="Utils_aplicacionExterna_txt_msgSinMapas">We are sorry, your device does not have any application to view maps</string>
+    <string name="Utils_eliminarObra_txt_msgCancelado">Remove work cancelled</string>
+    <string name="Utils_eliminarEspecialidad_txt_msgConfirmacion">The speciality has been removed from the list. Do not forget to push \"Update specialities\" for the changes to take effect.</string>
+
+    <string name="VentanaBusqueda_txt_msgFormulario1">You must select at least one of the search criteria</string>
+    <string name="VentanaBusqueda_txt_msgFormulario2">To search by typology, you must select at least one activity from the drop-down list</string>
+    <string name="VentanaBusqueda_txt_msgFormulario3">To search by proximity from a city, you must select the province and the city from the drop-down lists</string>
+    <string name="VentanaBusqueda_txt_msgFormulario4">To search by key words, you must enter words of 4+ characters length</string>
+
+    <string name="VentanaInicio_txt_msgSinConexion_titulo">App Login</string>
+
+    <string name="VentanaLogin_txt_faltanDatos">You must fill in both fields</string>
+
+    <string name="VentanaMostrarImagen_txt_msgFalloImagen">An error happened while trying to show the image</string>
+
+    <string name="VentanaNuevaObra_txt_msgFormulario1">You must provide a title for the work</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario10">The execution date must be later than the current date</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario2">You must select the activity, category and type for the work</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario3">You must provide an estimated execution date for the work</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario4">You must provide a contact name for the work</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario5">You must provide at least a contact method (phone and/or email)</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario6">You must provide a detailed description for the work</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario7">You must provide the province and city where the work is located</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario8">You must provide the map point where the work is located</string>
+    <string name="VentanaNuevaObra_txt_msgFormulario9">The execution date is not valid</string>
+    <string name="VentanaNuevaObra_txt_msgObraPublicada">The work has been published,\nrefresh the Open Works list to see it</string>
+
+    <string name="VentanaPerfil_txt_msgImagenNoSeleccionada">No picture was selected</string>
+    <string name="VentanaPerfil_txt_msgFormulario1">You must enter your current password</string>
+    <string name="VentanaPerfil_txt_msgFormulario2">The repeated password does not match</string>
+    <string name="VentanaPerfil_txt_msgFormulario3">The new password must be different than the current one</string>
+    <string name="VentanaPerfil_txt_msgFormulario4">The new password must be between 6 and 16 characters long</string>
+    <string name="VentanaPerfil_txt_msgFormulario5">You must provide a screen name</string>
+    <string name="VentanaPerfil_txt_msgFormulario6">Select a city from the drop-down list, or select \"&lt;Non-specified&gt;\" as province.</string>
+    <string name="VentanaPerfil_txt_msgFormulario7">The birth date is not valid</string>
+    <string name="VentanaPerfil_txt_msgFormulario8">The birth date must be previous to the current one</string>
+
+    <string name="VentanaPerfil_txt_msgAyudaPremium">Contact our Support team to learn how to enable your Premium access.</string>
+    <string name="VentanaPerfil_txt_msgAyudaPremium_titulo">Premium Access</string>
+    <string name="VentanaPerfil_txt_msgFormulario9">You must provide a screen name (i.e.Smith Industrials, Inc.)</string>
+    <string name="VentanaPerfil_txt_msgFormulario10">The contact email is not valid.</string>
+    <string name="VentanaPerfil_txt_msgFormulario11">That is not a valid web address.</string>
+    <string name="VentanaPerfil_txt_msgFormulario12">An error happened while selecting the specialities. Please try again.</string>
+
+    <string name="VentanaRegistro_txt_msgFaltanDatos">You must fill in both fields</string>
+    <string name="VentanaRegistro_txt_msgEmailInvalido">The email address is not valid</string>
+    <string name="VentanaRegistro_txt_msgPasswordsDistintas">The passwords does not match</string>
+    <string name="VentanaRegistro_txt_msgAceptarCondiciones">You must accept the terms in order to register</string>
+
+    <string name="VentanaResetPassword_txt_faltanDatos">You must provide your email address</string>
+
+
+<!--
+    SECCIÓN #4: TEXTOS DE ELEMENTOS DE LA INTERFAZ GRÁFICA (layouts xml)
+    ================================================================================================
+-->
+
+    <string name="general_txt_poblacion">City:</string>
+    <string name="general_txt_profesionalSinValoraciones">This professional has not received any vote yet.</string>
+    <string name="general_txt_provincia">Province:</string>
+    <string name="general_txt_tipoAcceso_particular">Private User access</string>
+    <string name="general_txt_tipoAcceso_profesional">Professional User access</string>
+    <string name="general_txt_unidadDistancia">mi</string>
+    <string name="general_txt_votos">Votes:</string>
+
+    <string name="spinner_txt_cualquiera">&lt;Any&gt;</string>
+    <string name="spinner_txt_primeroActividad">&lt;Select an activity first&gt;</string>
+    <string name="spinner_txt_primeroCategoria">&lt;Select a category first&gt;</string>
+    <string name="spinner_txt_primeroProvincia">&lt;Select a province first&gt;</string>
+    <string name="spinner_txt_seleccionaActividad">&lt;Select an activity&gt;</string>
+    <string name="spinner_txt_seleccionaCategoria">&lt;Select a category&gt;</string>
+    <string name="spinner_txt_seleccionaPoblacion">&lt;Select a city&gt;</string>
+    <string name="spinner_txt_seleccionaProvincia">&lt;Select a province&gt;</string>
+    <string name="spinner_txt_seleccionaTipo">&lt;Select a work type&gt;</string>
+    <string name="spinner_txt_sinEspecificar">&lt;Non-specified&gt;</string>
+    <string name="spinner_txt_todos">&lt;All&gt;</string>
+
+    <string name="ManejadorExcepciones_txt_firmware">\n************ FIRMWARE ************\n</string>
+    <string name="ManejadorExcepciones_txt_infoDispositivo">\n****** DEVICE INFO ******\n</string>
+    <string name="ManejadorExcepciones_txt_trazaError">********** ERROR TRACE **********\n</string>
+
+    <string name="VentanaAccesoPremium_txt_btnActivar">Enable my Premium access</string>
+    <string name="VentanaAccesoPremium_txt_btnDesactivar">Disable my Premium access</string>
+    <string name="VentanaAccesoPremium_txt_estado">Your Premium access status:</string>
+    <string name="VentanaAccesoPremium_txt_estadoActivado">Enabled</string>
+    <string name="VentanaAccesoPremium_txt_estadoDesactivado">Disabled</string>
+    <string name="VentanaAccesoPremium_txt_promoción1">Start enjoying all the exclusive benefits for Premium users of</string>
+    <string name="VentanaAccesoPremium_txt_titulo">Premium Access</string>
+    <string name="VentanaAccesoPremium_txt_tituloPromocion">Limited-Time offer</string>
+    <string name="VentanaAccesoPremium_txt_ventaja1">Possibility of following interesting works.</string>
+    <string name="VentanaAccesoPremium_txt_ventaja2">Private users can see you are interested in their work and contact you.</string>
+    <string name="VentanaAccesoPremium_txt_ventaja3">Get access to the contact info of the work bidders.</string>
+    <string name="VentanaAccesoPremium_txt_ventaja4">100% free!</string>
+
+    <string name="VentanaAcercaDe_txt_asuntoEmail">Support Request</string>
+    <string name="VentanaAcercaDe_txt_build">Build:</string>
+    <string name="VentanaAcercaDe_txt_copyright">\u00A92016 Carlos Delgado Andrés</string>
+    <string name="VentanaAcercaDe_txt_dispositivosAndroid">for Android 4.1+ devices</string>
+    <string name="VentanaAcercaDe_txt_fecha">Date:</string>
+    <string name="VentanaAcercaDe_txt_sitioWeb">Go to miMartillo.com website</string>
+    <string name="VentanaAcercaDe_txt_soporte">Support:</string>
+    <string name="VentanaAcercaDe_txt_titulo">About miMartillo.com</string>
+    <string name="VentanaAcercaDe_txt_version">Version:</string>
+
+    <string name="VentanaBusqueda_txt_actividad">Activity:</string>
+    <string name="VentanaBusqueda_txt_btnBuscar">Search</string>
+    <string name="VentanaBusqueda_txt_btnReset">Reset</string>
+    <string name="VentanaBusqueda_txt_busquedaPorProximidad">Search by proximity</string>
+    <string name="VentanaBusqueda_txt_busquedaPorTexto">Search by key words</string>
+    <string name="VentanaBusqueda_txt_busquedaPorTipologia">Search by typology</string>
+    <string name="VentanaBusqueda_txt_categoria">Category:</string>
+    <string name="VentanaBusqueda_txt_desdePoblacion">From a city</string>
+    <string name="VentanaBusqueda_txt_desdeUbicacion">From my current location</string>
+    <string name="VentanaBusqueda_txt_selecciona">Select search criteria:</string>
+    <string name="VentanaBusqueda_txt_sinBusquedas">You have not run any search yet.</string>
+    <string name="VentanaBusqueda_txt_sinResultados_obras">The last search did not find any matching work.\nTry again modifying your search criteria.</string>
+    <string name="VentanaBusqueda_txt_sinResultados_profesionales">The last search did not find any matching professional.\nTry again modifying your search criteria.</string>
+    <string name="VentanaBusqueda_txt_tabCriterios">Search criteria</string>
+    <string name="VentanaBusqueda_txt_tabResultados">Search results</string>
+    <string name="VentanaBusqueda_txt_texto">Text:</string>
+    <string name="VentanaBusqueda_txt_textoHint">Key words to search</string>
+    <string name="VentanaBusqueda_txt_tipo">Work type:</string>
+    <string name="VentanaBusqueda_txt_titulo_obras">Work Search</string>
+    <string name="VentanaBusqueda_txt_titulo_profesionales">Professional Search</string>
+
+    <string name="VentanaDatosObra_txt_actualizado">Updated:</string>
+    <string name="VentanaDatosObra_txt_asuntoEmail">Found in miMartillo.com</string>
+    <string name="VentanaDatosObra_txt_cercaDe">Close to</string>
+    <string name="VentanaDatosObra_txt_contacto">Contact info:</string>
+    <string name="VentanaDatosObra_txt_descripcion">Description:</string>
+    <string name="VentanaDatosObra_txt_disponible">For followers of this work only</string>
+    <string name="VentanaDatosObra_txt_email">Email:</string>
+    <string name="VentanaDatosObra_txt_fotos">Pictures:</string>
+    <string name="VentanaDatosObra_txt_nombre">Name:</string>
+    <string name="VentanaDatosObra_txt_realizacion">Execution:</string>
+    <string name="VentanaDatosObra_txt_sinSeguidores">This work has no followers yet.</string>
+    <string name="VentanaDatosObra_txt_tabDetalles">Detail</string>
+    <string name="VentanaDatosObra_txt_tabInteresados">Followers</string>
+    <string name="VentanaDatosObra_txt_telefono">Phone:</string>
+    <string name="VentanaDatosObra_txt_titulo_obraAbierta">Open work</string>
+    <string name="VentanaDatosObra_txt_titulo_obraAdjudicada">Assigned work</string>
+    <string name="VentanaDatosObra_txt_titulo_obraCerrada">Closed work</string>
+    <string name="VentanaDatosObra_txt_titulo_obraCompletada">Finished work</string>
+    <string name="VentanaDatosObra_txt_titulo_obraEnSeguimiento">Followed work</string>
+    <string name="VentanaDatosObra_txt_titulo_obraEncontrada">Found work</string>
+    <string name="VentanaDatosObra_txt_ubicacion">Location:</string>
+    <string name="VentanaDatosObra_txt_visitas">Views:</string>
+
+    <string name="VentanaDatosProfesional_txt_asuntoEmail">Found in miMartillo.com</string>
+    <string name="VentanaDatosProfesional_txt_btnEspecialidades_mostrar">Show</string>
+    <string name="VentanaDatosProfesional_txt_btnEspecialidades_ocultar">Hide</string>
+    <string name="VentanaDatosProfesional_txt_calidad">Quality:</string>
+    <string name="VentanaDatosProfesional_txt_contacto">Contact info:</string>
+    <string name="VentanaDatosProfesional_txt_direccion">Address:</string>
+    <string name="VentanaDatosProfesional_txt_email">Email:</string>
+    <string name="VentanaDatosProfesional_txt_especialidades">Specialities:</string>
+    <string name="VentanaDatosProfesional_txt_poblacion">City:</string>
+    <string name="VentanaDatosProfesional_txt_precio">Cost:</string>
+    <string name="VentanaDatosProfesional_txt_sinDatosContacto">This professional has not provided any contact info yet.</string>
+    <string name="VentanaDatosProfesional_txt_sinEspecialidades">This professional has not provided any speciality yet.</string>
+    <string name="VentanaDatosProfesional_txt_tabDetalles">Detail</string>
+    <string name="VentanaDatosProfesional_txt_tabValoraciones">Votes</string>
+    <string name="VentanaDatosProfesional_txt_telefono">Phone:</string>
+    <string name="VentanaDatosProfesional_txt_titulo">Professional info</string>
+    <string name="VentanaDatosProfesional_txt_web">Web:</string>
+
+    <string name="VentanaErrores_txt_btnAceptarError">Ok</string>
+    <string name="VentanaErrores_txt_btnCopiarPortapapeles">Copy to clipboard</string>
+    <string name="VentanaErrores_txt_debugTitulo">Debug info:</string>
+    <string name="VentanaErrores_txt_infoCopiada">Error info copied to clipboard</string>
+    <string name="VentanaErrores_txt_informativo">The app reported an unexpected error. Please try again.</string>
+    <string name="VentanaErrores_txt_titulo">Application error</string>
+
+    <string name="VentanaInicio_txt_btnAccesoParticulares">Private User</string>
+    <string name="VentanaInicio_txt_btnAccesoProfesionales">Professional User</string>
+    <string name="VentanaInicio_txt_problemasConexion">Connection issues?</string>
+
+    <string name="VentanaLogin_txt_btnLogin">Log in</string>
+    <string name="VentanaLogin_txt_btnOlvidado">Forgot your password?</string>
+    <string name="VentanaLogin_txt_btnRegistrar">I do not have an account</string>
+    <string name="VentanaLogin_txt_email">Your email</string>
+    <string name="VentanaLogin_txt_password">Password</string>
+    <string name="VentanaLogin_txt_titulo">App Login</string>
+
+    <string name="VentanaNuevaObra_txt_actividad">Activity:</string>
+    <string name="VentanaNuevaObra_txt_btnPublicar">Publish</string>
+    <string name="VentanaNuevaObra_txt_btnReset">Reset</string>
+    <string name="VentanaNuevaObra_txt_categoria">Category:</string>
+    <string name="VentanaNuevaObra_txt_descripcion">Description:</string>
+    <string name="VentanaNuevaObra_txt_descripcionHint">Detailed description of the work you want to accomplish.</string>
+    <string name="VentanaNuevaObra_txt_emailHint">Contact email</string>
+
+    <string name="VentanaNuevaObra_txt_fechaEjecucion">Execution:</string>
+    <string name="VentanaNuevaObra_txt_fechaEjecucionHint">Estimated date</string>
+    <string name="VentanaNuevaObra_txt_mapa">Point in map</string>
+    <string name="VentanaNuevaObra_txt_mapaHint">Select a point in the map</string>
+    <string name="VentanaNuevaObra_txt_nombreHint">Contact person</string>
+    <string name="VentanaNuevaObra_txt_poblacion">City</string>
+    <string name="VentanaNuevaObra_txt_telefonoHint">Contact phone</string>
+    <string name="VentanaNuevaObra_txt_tipo">Type:</string>
+    <string name="VentanaNuevaObra_txt_titulo">Publish work</string>
+
+    <string name="VentanaNuevaObra_txt_tituloHint">Work title</string>
+    <string name="VentanaNuevaObra_txt_ubicacion">Location:</string>
+
+    <string name="VentanaParticular_txt_NoAdjudicarAnadie">Do not assign to anybody</string>
+    <string name="VentanaParticular_txt_titulo_favoritos">My favorite professionals</string>
+    <string name="VentanaParticular_txt_titulo_obrasAbiertas">My open works</string>
+    <string name="VentanaParticular_txt_titulo_obrasCerradas">My closed works</string>
+
+    <string name="VentanaPerfil_txt_agregarEspecialidad">Add speciality</string>
+    <string name="VentanaPerfil_txt_btnContacto">Update contact info</string>
+    <string name="VentanaPerfil_txt_btnCuenta">Update account info</string>
+    <string name="VentanaPerfil_txt_btnEspecialidades">Update specialities</string>
+    <string name="VentanaPerfil_txt_btnOtros">Update info</string>
+    <string name="VentanaPerfil_txt_btnPassword">Change password</string>
+    <string name="VentanaPerfil_txt_cambiarPassword">Change password</string>
+    <string name="VentanaPerfil_txt_contacto">Contact info</string>
+    <string name="VentanaPerfil_txt_contactoExplicacion">This data will be the default contact info for your new works.</string>
+    <string name="VentanaPerfil_txt_contactoExplicacionPro">This info will let private users contact you and your business.</string>
+    <string name="VentanaPerfil_txt_cuenta">Your user account</string>
+    <string name="VentanaPerfil_txt_descripcion">Description:</string>
+    <string name="VentanaPerfil_txt_descripcionHint">Brief description of your business or your services, special offers, etc.</string>
+    <string name="VentanaPerfil_txt_direccion">Address:</string>
+    <string name="VentanaPerfil_txt_direccionHint">Physical address of your business\n(street, number)</string>
+    <string name="VentanaPerfil_txt_emailContacto">Email:</string>
+    <string name="VentanaPerfil_txt_emailContactoHint">Your contact email</string>
+    <string name="VentanaPerfil_txt_especialidades">Your specialities</string>
+    <string name="VentanaPerfil_txt_especialidadesSeleccionadas">Selected specialities:</string>
+    <string name="VentanaPerfil_txt_fecha">Birth date:</string>
+    <string name="VentanaPerfil_txt_fechaHint">DD/MM/YYYY</string>
+    <string name="VentanaPerfil_txt_idiomaNotificaciones">Preferred language for notifications:</string>
+    <string name="VentanaPerfil_txt_idiomaNotificacionesEng">English (USA)</string>
+    <string name="VentanaPerfil_txt_idiomaNotificacionesEsp">Spanish (Spain)</string>
+    <string name="VentanaPerfil_txt_nombre">Nombre:</string>
+    <string name="VentanaPerfil_txt_nombreParaMostrar">screen name</string>
+    <string name="VentanaPerfil_txt_otros">Other info</string>
+    <string name="VentanaPerfil_txt_otrosExplicacion">This data let the miMartillo.com staff provide a better service, and will never be visible to other users.</string>
+    <string name="VentanaPerfil_txt_otrosExplicacionPro">This data let the miMartillo.com staff provide a better service.</string>
+    <string name="VentanaPerfil_txt_passwordActualHint">Enter the current password</string>
+    <string name="VentanaPerfil_txt_passwordNuevo1Hint">Enter the new password</string>
+    <string name="VentanaPerfil_txt_passwordNuevo2Hint">Repeat the new password</string>
+    <string name="VentanaPerfil_txt_poblacionTitulo">Location:</string>
+    <string name="VentanaPerfil_txt_publicidad">Suscribe to miMartillo.com newsletter?</string>
+    <string name="VentanaPerfil_txt_publicidadNo">No</string>
+    <string name="VentanaPerfil_txt_publicidadSi">Yes</string>
+
+    <string name="VentanaPerfil_txt_seguridadConexion">Connection security</string>
+    <string name="VentanaPerfil_txt_seguridadConexionActivada">Enabled</string>
+    <string name="VentanaPerfil_txt_seguridadConexionDesactivada">Disabled</string>
+    <string name="VentanaPerfil_txt_seguridadConexionInfo">Sometimes, the secure transfer protocol is not available. Disable secure connection only in case you are experiencing connection issues from a wifi network.\n\nFor a higher privacy, always enable secure connection when possible.</string>
+    <string name="VentanaPerfil_txt_seguridadConexionUso">Secure connection:</string>
+    <string name="VentanaPerfil_txt_sexo">Gender:</string>
+    <string name="VentanaPerfil_txt_sexoFemenino">Female</string>
+    <string name="VentanaPerfil_txt_sexoMasculino">Male</string>
+    <string name="VentanaPerfil_txt_sexoSinEspecificar">Non-specified</string>
+    <string name="VentanaPerfil_txt_sinEspecialidades">You have not provided any speciality yet. Use the \"Add speciality\" button to provide the work types you specialize in.</string>
+    <string name="VentanaPerfil_txt_sinValorar">You have not received any vote yet</string>
+    <string name="VentanaPerfil_txt_telefono1">phone #1</string>
+    <string name="VentanaPerfil_txt_telefono2">phone #2</string>
+    <string name="VentanaPerfil_txt_telefonos">Phones:</string>
+    <string name="VentanaPerfil_txt_titulo">View and modify my profile</string>
+    <string name="VentanaPerfil_txt_usuario">User (email):</string>
+    <string name="VentanaPerfil_txt_usuarioPremium">Premium Professional:</string>
+    <string name="VentanaPerfil_txt_usuarioPremiumNo">No</string>
+    <string name="VentanaPerfil_txt_usuarioPremiumSi">Yes</string>
+    <string name="VentanaPerfil_txt_web">Web:</string>
+    <string name="VentanaPerfil_txt_webHint">Address of your web site</string>
+
+    <string name="VentanaProfesional_txt_titulo_obrasAdjudicadas">My assigned works</string>
+    <string name="VentanaProfesional_txt_titulo_obrasCompletadas">My finished works</string>
+    <string name="VentanaProfesional_txt_titulo_obrasSeguidas">My followed works</string>
+    <string name="VentanaProfesional_txt_titulo_valoraciones">My received votes</string>
+
+    <string name="VentanaRegistro_txt_btnCrearCuenta">Create account</string>
+    <string name="VentanaRegistro_txt_condiciones">I accept the terms and conditions</string>
+    <string name="VentanaRegistro_txt_verCondiciones">(Show)</string>
+    <string name="VentanaRegistro_txt_emailHint">Email</string>
+    <string name="VentanaRegistro_txt_nombreHint">Name</string>
+    <string name="VentanaRegistro_txt_password2Hint">Repeat password</string>
+    <string name="VentanaRegistro_txt_passwordHint">Password</string>
+    <string name="VentanaRegistro_txt_tipoParticular">New private account</string>
+    <string name="VentanaRegistro_txt_tipoProfesional">New professional account</string>
+    <string name="VentanaRegistro_txt_titulo">Create user account</string>
+
+    <string name="VentanaResetPassword_txt_btnRecuperar">Send</string>
+    <string name="VentanaResetPassword_txt_email">Your email</string>
+    <string name="VentanaResetPassword_txt_titulo">Reset password</string>
+
+    <string name="dialogo_agregarEspecialidad_txt_info">Select a work type belonging to an activity and a category. You can also select &lt;All&gt; the types of a specified category.</string>
+    <string name="dialogo_agregarEspecialidad_txt_actividad">Activity:</string>
+    <string name="dialogo_agregarEspecialidad_txt_categoria">Category:</string>
+    <string name="dialogo_agregarEspecialidad_txt_tipo">Type:</string>
+
+    <string name="dialogo_protocoloConexion_txt_info">Sometimes, the secure transfer protocol is not available. Disable secure connection only in case you are experiencing connection issues from a wifi network.\n\nFor a higher privacy, always enable secure connection when possible.</string>
+    <string name="dialogo_protocoloConexion_txt_conexion">Secure connection:</string>
+    <string name="dialogo_protocoloConexion_txt_conexion_activada">Enabled</string>
+    <string name="dialogo_protocoloConexion_txt_conexion_desactivada">Disabled</string>
+
+    <string name="dialogo_cerrarObra_txt_titulo">Close work</string>
+    <string name="dialogo_cerrarObra_txt_pregunta">Who do you want to assign this work to?</string>
+    <string name="dialogo_cerrarObra_txt_opcionDefecto">Do not assign to anybody</string>
+
+    <string name="dialogo_eliminarObra_txt_pregunta">Do you want to remove this work?\n(this cannot be undone)</string>
+    <string name="dialogo_eliminarObra_txt_titulo">Remove work</string>
+
+    <string name="dialogo_valorarObra_txt_adjudicatario">"Assigned to:"</string>
+    <string name="dialogo_valorarObra_txt_calidad">Quality:</string>
+    <string name="dialogo_valorarObra_txt_comentario">Remarks:</string>
+    <string name="dialogo_valorarObra_txt_comentarioHint">Your remarks about the professional and the finished work</string>
+    <string name="dialogo_valorarObra_txt_coste">Work cost:</string>
+    <string name="dialogo_valorarObra_txt_obra">"Work:"</string>
+    <string name="dialogo_valorarObra_txt_opcional">(Optional)</string>
+    <string name="dialogo_valorarObra_txt_precio">Price</string>
+    <string name="dialogo_valorarObra_txt_titulo">Vote work</string>
+    <string name="dialogo_valorarObra_txt_valoracion">Your opinion about the work:</string>
+
+    <string name="dialogo_condicionesUso_txt_titulo">Terms and Conditions</string>
+    <string name="dialogo_condicionesUso_txt_encabezado">Please read and accept these Terms &amp; Conditions before using the miMartillo.com App:</string>
+    <string name="dialogo_condicionesUso_txt_contenido">
+        &#9899; TERMS OF USE
+        \n\n
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sodales eget nulla a semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus augue nulla, ornare non faucibus vel, congue ac nulla. Pellentesque sit amet nibh tincidunt, lobortis erat quis, molestie ipsum.
+        \n\n
+        Praesent maximus risus at eros vestibulum, in pharetra ipsum porta. Vivamus sed mi nec ex consectetur blandit. Suspendisse maximus pharetra purus eget dapibus. Ut diam nisl, placerat id sem vitae, varius tincidunt urna. Morbi mauris lacus, vehicula quis libero eu, finibus consequat magna. Phasellus et tempus sapien.
+        \n\n
+        Donec id lacinia orci. Donec pretium suscipit luctus. Nulla purus nisl, dapibus quis tristique in, varius eu libero. Aenean gravida imperdiet augue, eu varius eros suscipit et. Nam eu interdum nisl. Etiam in condimentum libero, eu mattis erat. Nunc tellus metus, ultricies at mollis non, mollis commodo justo.
+        \n\n
+        &#9899; PRIVACY
+        \n\n
+        Proin posuere luctus odio eget sodales. Phasellus a enim tempus, aliquam mi ut, elementum sapien. Nunc rutrum neque ullamcorper imperdiet congue. Etiam elementum purus ullamcorper metus iaculis, in posuere neque accumsan. Nulla cursus tempor dolor, vitae interdum metus convallis lacinia.
+        \n\n
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi ultrices purus lacus, eu ornare augue mollis quis. Sed commodo nisi libero, eget dictum nibh blandit ac. Maecenas tellus est, scelerisque a molestie pulvinar, maximus vel magna. Sed sed sapien sed augue vestibulum feugiat.
+        \n\n
+        Nullam justo neque, dignissim a nunc at, dignissim tincidunt diam. Duis feugiat aliquam magna quis scelerisque. Mauris fringilla convallis iaculis.
+    </string>
+
+    <string name="elemento_cabeceraObra_txt_distancia">Distance:</string>
+    <string name="elemento_cabeceraObra_txt_pendiente">(Vote pending)</string>
+    <string name="elemento_cabeceraObra_txt_realizacion">Execution:</string>
+    <string name="elemento_cabeceraObra_txt_seguidores">Followers:</string>
+    <string name="elemento_cabeceraObra_txt_visitas">Views:</string>
+
+    <string name="elemento_cabeceraProfesional_txt_adjudicatario">(Got this work assigned)</string>
+    <string name="elemento_cabeceraProfesional_txt_calidad">Quality:</string>
+    <string name="elemento_cabeceraProfesional_txt_distancia">Distance:</string>
+    <string name="elemento_cabeceraProfesional_txt_precio">Cost:</string>
+
+    <string name="elemento_perfilParticular_txt_perfilParticular">Private profile</string>
+
+    <string name="elemento_perfilProfesional_txt_perfilProfesional">Professional profile</string>
+
+    <string name="elemento_valoracion_txt_calidad">Quality:</string>
+    <string name="elemento_valoracion_txt_calificacionYcoste">Opinion and price:</string>
+    <string name="elemento_valoracion_txt_comentario">Remarks:</string>
+    <string name="elemento_valoracion_txt_detalles">Work detail:</string>
+    <string name="elemento_valoracion_txt_precio">Cost:</string>
+
+
+</resources>

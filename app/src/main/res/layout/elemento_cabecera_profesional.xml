@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/fondo_contenido">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/fondo_blanco_layout_redondeado"
+        android:id="@+id/layoutMarcoInterior" >
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutCabProAvatar" >
+
+            <ImageView
+                android:id="@+id/imgCabProAvatar"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/default_avatar"
+                android:background="#000000"
+                android:padding="1dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/layoutCabProDatos"
+            android:layout_toRightOf="@+id/layoutCabProAvatar"
+            android:layout_toLeftOf="@+id/layoutCabProFavorito"
+            android:layout_toStartOf="@+id/layoutCabProFavorito">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Profesional"
+                android:id="@+id/txtCabProNombre"
+                android:padding="2dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Población (Provincia)"
+                android:id="@+id/txtCabProPoblacion"
+                android:padding="2dp"
+                android:textColor="@color/texto_general" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:id="@+id/tbrCabProDistancia" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/elemento_cabeceraProfesional_txt_distancia"
+                        android:id="@+id/txtCabProDistancia"
+                        android:paddingRight="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_general" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="n/d"
+                        android:id="@+id/txtCabProDistanciaDatos"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general"
+                        android:typeface="monospace"
+                        android:textStyle="italic" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/general_txt_votos"
+                        android:id="@+id/txtCabProVotos"
+                        android:paddingRight="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_general" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/txtCabProVotosDatos"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/elemento_cabeceraProfesional_txt_calidad"
+                        android:id="@+id/txtCabProCalidad"
+                        android:paddingRight="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_general" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0,00"
+                        android:id="@+id/txtCabProCalidadDatos"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general" />
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:id="@+id/rtnCabProCalidad"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:paddingLeft="2dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/elemento_cabeceraProfesional_txt_precio"
+                        android:id="@+id/txtCabProPrecio"
+                        android:paddingRight="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_general" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0,00"
+                        android:id="@+id/txtCabProPrecioDatos"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general" />
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:id="@+id/rtnCabProPrecio"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:paddingLeft="2dp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/elemento_cabeceraProfesional_txt_adjudicatario"
+                android:id="@+id/txtCabProAdjudicatario"
+                android:textColor="@color/texto_resaltado2"
+                android:textStyle="bold|italic"
+                android:padding="2dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:id="@+id/layoutCabProFavorito"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgCabProFavorito"
+                android:src="@drawable/ic_estrellavacia" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

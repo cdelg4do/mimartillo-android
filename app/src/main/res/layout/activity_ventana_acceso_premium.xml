@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.cdelgado.mimartillocom.VentanaAcercaDe"
+    android:background="@color/fondo_contenido">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/icono_app"
+                android:src="@drawable/ic_premium_big"
+                android:layout_gravity="center_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:id="@+id/layout_info"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/VentanaAccesoPremium_txt_tituloPromocion"
+                    android:id="@+id/txtTituloPromocion"
+                    android:textStyle="bold|italic"
+                    android:textSize="16sp"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/oro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/VentanaAccesoPremium_txt_promoción1"
+                    android:id="@+id/txtPromocion1"
+                    android:layout_alignParentTop="false"
+                    android:layout_below="@+id/txtTituloPromocion"
+                    android:textColor="@color/negro"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignRight="@+id/imgNombreApp"
+                    android:layout_alignEnd="@+id/imgNombreApp"
+                    android:layout_alignLeft="@+id/imgNombreApp"
+                    android:layout_alignStart="@+id/imgNombreApp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="miMartillo.com"
+                    android:id="@+id/imgNombreApp"
+                    android:textColor="@color/negro"
+                    android:textSize="22sp"
+                    android:textStyle="bold|italic"
+                    android:src="@drawable/cabecera"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/txtPromocion1"
+                    android:layout_marginTop="5dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/layoutVentajas"
+                    android:layout_below="@+id/imgNombreApp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaAccesoPremium_txt_ventaja1"
+                        android:id="@+id/rbtnVentaja1"
+                        android:checked="true"
+                        android:textColor="@color/oro"
+                        android:buttonTint="@color/oro"
+                        android:textStyle="bold|italic" />/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaAccesoPremium_txt_ventaja2"
+                        android:id="@+id/rbtnVentaja2"
+                        android:textStyle="bold|italic"
+                        android:checked="true"
+                        android:textColor="@color/oro"
+                        android:buttonTint="@color/oro" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaAccesoPremium_txt_ventaja3"
+                        android:id="@+id/rbtnVentaja3"
+                        android:textStyle="bold|italic"
+                        android:checked="true"
+                        android:textColor="@color/oro"
+                        android:buttonTint="@color/oro"
+                        android:layout_marginTop="5dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaAccesoPremium_txt_ventaja4"
+                        android:id="@+id/rbtnVentaja4"
+                        android:textStyle="bold|italic"
+                        android:checked="true"
+                        android:textColor="@color/oro"
+                        android:buttonTint="@color/oro" />
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:id="@+id/tblInfo"
+                    android:layout_below="@+id/layoutVentajas">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaAccesoPremium_txt_estado"
+                            android:id="@+id/txtTituloEstado"
+                            android:layout_marginLeft="10dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/negro" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaAccesoPremium_txt_estadoDesactivado"
+                            android:id="@+id/txtEstado"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/rojo"
+                            android:typeface="monospace"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/VentanaAccesoPremium_txt_btnActivar"
+                    android:id="@+id/btnAccesoPremium"
+                    android:singleLine="false"
+                    android:background="@drawable/fondo_boton_gris_redondeado"
+                    android:textColor="@color/negro"
+                    android:layout_below="@+id/tblInfo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

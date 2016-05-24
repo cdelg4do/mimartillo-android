@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:weightSum="1"
+    android:background="@drawable/seleccion_elemento"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgOpcion"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_setup"
+        android:layout_marginLeft="10dp" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elemento de la Lista"
+        android:id="@+id/txtOpcion"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textColor="@color/texto_item"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imgOpcion"
+        android:layout_toEndOf="@+id/imgOpcion"
+        android:layout_marginLeft="10dp" />
+
+</RelativeLayout>

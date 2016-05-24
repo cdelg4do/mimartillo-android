@@ -1,0 +1,630 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/fondo_contenido">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView4" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4"
+            android:padding="10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:padding="5dp"
+                android:id="@+id/perfPart_layoutCabecera"
+                android:layout_margin="5dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/perfPart_layoutAvatar" >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:id="@+id/perfPart_imgAvatar"
+                        android:src="@drawable/default_avatar"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        app:border_width="1dp"
+                        app:border_color="@color/borde_circulo_perfil"
+                        android:layout_marginTop="5dp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_eliminarimagen"
+                        android:id="@+id/perfPart_btnEliminarAvatar"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/perfPart_imgAvatar"
+                        android:layout_marginLeft="-9dp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout2"
+                    android:paddingLeft="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_toRightOf="@+id/perfPart_layoutAvatar"
+                    android:layout_toEndOf="@+id/perfPart_layoutAvatar"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_usuario"
+                        android:id="@+id/textView21"
+                        android:padding="2dp"
+                        android:textColor="@color/texto_general"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="email@del.usuario"
+                        android:id="@+id/perfPart_txtEmail"
+                        android:padding="2dp"
+                        android:textColor="@color/negro"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textIsSelectable="true" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/perfPart_layoutPassword"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/perfPart_layoutPasswordCabecera"
+                    android:onClick="onClick_LayoutSecciones">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_cambiarPassword"
+                        android:id="@+id/textView29"
+                        android:padding="5dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:id="@+id/perfPart_layoutPasswordDatos"
+                    android:layout_marginBottom="-5dp"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/perfPart_txtPasswordActual"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="@string/VentanaPerfil_txt_passwordActualHint"
+                        android:inputType="textPassword"
+                        android:textSize="12dp" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/perfPart_txtPasswordNuevo1"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/VentanaPerfil_txt_passwordNuevo1Hint"
+                        android:inputType="textPassword"
+                        android:textSize="12dp" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/perfPart_txtPasswordNuevo2"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/texto_general"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="@string/VentanaPerfil_txt_passwordNuevo2Hint"
+                        android:inputType="textPassword"
+                        android:textSize="12dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_btnPassword"
+                        android:id="@+id/perfPart_btnPassword"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/perfPart_layoutSeguridad"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:layout_margin="5dp"
+                android:padding="5dp" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/perfPart_layoutSeguridadCabecera"
+                    android:onClick="onClick_LayoutSecciones" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_seguridadConexion"
+                        android:id="@+id/textView23"
+                        android:padding="5dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:id="@+id/perfPart_layoutSeguridadDatos"
+                    android:layout_marginBottom="-5dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_seguridadConexionInfo"
+                        android:id="@+id/textView24"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="italic"
+                        android:visibility="visible"
+                        android:layout_marginBottom="10dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|right"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_seguridadConexionUso"
+                            android:id="@+id/textView43"
+                            android:textStyle="italic"
+                            android:visibility="visible"
+                            android:textColor="@color/negro" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/VentanaPerfil_txt_seguridadConexionActivada"
+                                android:id="@+id/perfPart_txtEstadoSeguridad"
+                                android:textStyle="bold"
+                                android:textColor="@color/verde" />
+
+                            <Switch
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/perfPart_swSeguridad"
+                                android:checked="true"
+                                android:layout_marginBottom="5dp"
+                                android:elegantTextHeight="false"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:minWidth="80dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/perfPart_layoutContacto"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:padding="5dp"
+                android:layout_margin="5dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/perfPart_layoutContactoCabecera"
+                    android:onClick="onClick_LayoutSecciones">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_contacto"
+                        android:id="@+id/textView"
+                        android:padding="5dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/perfPart_layoutContactoDatos"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_contactoExplicacion"
+                        android:id="@+id/textView9"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="italic"
+                        android:visibility="visible"
+                        android:layout_marginBottom="10dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_nombre"
+                            android:id="@+id/textView27"
+                            android:textStyle="bold"
+                            android:textColor="@color/texto_general"
+                            android:paddingLeft="5dp" />
+
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/perfPart_txtNombre"
+                            android:paddingRight="4dp"
+                            android:textColor="@color/texto_general"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="@string/VentanaPerfil_txt_nombreParaMostrar"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_telefonos"
+                            android:id="@+id/textView31"
+                            android:textStyle="bold"
+                            android:textColor="@color/texto_general"
+                            android:paddingLeft="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="8dp" />
+
+                        <EditText
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/perfPart_txtTelefono1"
+                            android:textColor="@color/texto_general"
+                            android:hint="@string/VentanaPerfil_txt_telefono1"
+                            android:inputType="number"
+                            android:textSize="12sp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignLeft="@+id/perfPart_txtTelefono2"
+                            android:layout_alignStart="@+id/perfPart_txtTelefono2"
+                            android:layout_marginTop="5dp" />
+
+                        <EditText
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/perfPart_txtTelefono2"
+                            android:textColor="@color/texto_general"
+                            android:hint="@string/VentanaPerfil_txt_telefono2"
+                            android:inputType="number"
+                            android:textSize="12dp"
+                            android:layout_gravity="right"
+                            android:layout_below="@+id/textView31"
+                            android:layout_toRightOf="@+id/textView31"
+                            android:layout_toEndOf="@+id/textView31"
+                            android:layout_marginTop="15dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_poblacionTitulo"
+                        android:id="@+id/textView37"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_general"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/general_txt_provincia"
+                                android:id="@+id/textView30"
+                                android:layout_marginTop="5dp" />
+
+                            <Spinner
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/perfPart_spnProvincia"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:spinnerMode="dialog" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/general_txt_poblacion"
+                                android:id="@+id/textView32"
+                                android:layout_marginTop="5dp" />
+
+                            <Spinner
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/perfPart_spnPoblacion"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:spinnerMode="dialog" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_btnContacto"
+                        android:id="@+id/perfPart_btnContacto"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/perfPart_layoutOtros"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:padding="5dp"
+                android:layout_margin="5dp" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/perfPart_layoutOtrosCabecera"
+                    android:onClick="onClick_LayoutSecciones">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_otros"
+                        android:id="@+id/textView16"
+                        android:padding="5dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/perfPart_layoutOtrosDatos"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_otrosExplicacion"
+                        android:id="@+id/textView17"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="italic"
+                        android:visibility="visible"
+                        android:layout_marginBottom="5dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_fecha"
+                            android:id="@+id/textView20"
+                            android:textStyle="bold"
+                            android:textColor="@color/texto_general"
+                            android:paddingLeft="5dp" />
+
+                        <EditText
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/perfPart_txtNacimiento"
+                            android:paddingRight="4dp"
+                            android:textColor="@color/texto_general"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="@string/VentanaPerfil_txt_fechaHint"
+                            android:textSize="12sp"
+                            android:layout_marginTop="5dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/perfPart_imgNacimiento"
+                            android:src="@drawable/ic_calendario"
+                            android:padding="5dp"
+                            android:layout_marginTop="5dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_sexo"
+                            android:id="@+id/textView26"
+                            android:textStyle="bold"
+                            android:textColor="@color/texto_general"
+                            android:paddingLeft="5dp"
+                            android:layout_marginTop="10dp" />
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/perfPart_spnSexo"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:spinnerMode="dropdown"
+                            android:layout_marginTop="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_idiomaNotificaciones"
+                        android:id="@+id/textView22"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_general"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="10dp" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/perfPart_spnIdioma"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_publicidad"
+                        android:id="@+id/textView28"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_general"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="10dp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/perfPart_rgrPublicidad">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_publicidadSi"
+                            android:id="@+id/perfPart_rbtnPublicidadSi"
+                            android:checked="false"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaPerfil_txt_publicidadNo"
+                            android:id="@+id/perfPart_rbtnPublicidadNo"
+                            android:checked="false"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="12sp" />
+                    </RadioGroup>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaPerfil_txt_btnOtros"
+                        android:id="@+id/perfPart_btnOtros"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

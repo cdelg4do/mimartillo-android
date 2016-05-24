@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color de fondo del layout redondeado -->
+    <!-- <solid android:color="#6699CC"/>  -->
+    <solid android:color="@color/fondo_botones_amarillos"/>
+    <!-- Grosor y color del borde del layout redondeado -->
+    <stroke android:width="2dip" android:color="@color/borde_botones_amarillos" />
+    <!-- Radio de las esquinas: cuanto mayor, más redondeadas -->
+    <corners android:radius="50dip"/>
+    <!-- Padding -->
+    <padding android:left="15dip" android:top="4dip" android:right="15dip" android:bottom="4dip" />
+</shape>

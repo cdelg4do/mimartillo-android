@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.cdelgado.mimartillocom"
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Para manejo de las action bar de las activities
+    compile 'com.android.support:appcompat-v7:21.0.3'
+
+    // Para utilizar el elmento CircleImageView para los avatares de usuario
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+
+    // Para usar el selector de un punto en el mapa (Google Places API)
+    compile 'com.google.android.gms:play-services-location:7.3.0'
+
+    // Para la clase auxiliar SphericalUtil (Google Maps Android API Utility Library)
+    compile 'com.google.maps.android:android-maps-utils:0.3.4'
+
+    // Para usar el ImageView con zoom, etc
+    compile 'com.github.chrisbanes.photoview:library:1.2.3'
+
+    // Para usar el elemento RoundedImageView para imagenes redondeadas
+    compile 'com.makeramen:roundedimageview:2.2.1'
+}

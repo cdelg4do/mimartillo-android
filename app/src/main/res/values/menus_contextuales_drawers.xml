@@ -1,0 +1,148 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation" >
+
+    <!-- Menú drawer usuario particular -->
+
+    <string-array name="opcionesDesplegable_Particular_textos">
+        <item>@string/opcionDrawer_perfil</item>
+        <item>@string/opcionDrawer_misObrasAbiertas</item>
+        <item>@string/opcionDrawer_misObrasCerradas</item>
+        <item>@string/opcionDrawer_nuevaObra</item>
+        <item>@string/opcionDrawer_misFavoritos</item>
+        <item>@string/opcionDrawer_buscarProfesional</item>
+        <item>@string/opcionDrawer_acercaDe</item>
+    </string-array>
+
+    <string-array name="opcionesDesplegable_Particular_iconos">
+        <item>null</item>
+        <item>ic_obras_abiertas</item>
+        <item>ic_obras_cerradas</item>
+        <item>ic_nuevo</item>
+        <item>ic_favoritos</item>
+        <item>ic_buscar</item>
+        <item>ic_acerca_de</item>
+    </string-array>
+
+
+    <!-- Menú drawer usuario profesional -->
+
+    <string-array name="opcionesDesplegable_Profesional_textos">
+        <item>@string/opcionDrawer_perfil</item>
+        <item>@string/opcionDrawer_misObrasAdjudicadas</item>
+        <item>@string/opcionDrawer_misObrasCompletadas</item>
+        <item>@string/opcionDrawer_misObrasSeguidas</item>
+        <item>@string/opcionDrawer_misValoraciones</item>
+        <item>@string/opcionDrawer_buscarObra</item>
+        <item>@string/opcionDrawer_acercaDe</item>
+        <item>@string/opcionDrawer_accesoPremium</item>
+    </string-array>
+
+    <string-array name="opcionesDesplegable_Profesional_iconos">
+        <item>null</item>
+        <item>ic_obras_abiertas</item>
+        <item>ic_obras_cerradas</item>
+        <item>ic_obras_seguidas</item>
+        <item>ic_valoraciones_recibidas</item>
+        <item>ic_buscar</item>
+        <item>ic_acerca_de</item>
+        <item>ic_premium</item>
+    </string-array>
+
+
+    <!-- Menus contextuales Ventana Particular -->
+
+    <string-array name="menuContextual_ventanaParticular_cabeceraObra_abierta">
+        <item>@string/opcionMenu_ver_detalles</item>
+        <item>@string/opcionMenu_cerrar_obra</item>
+        <item>@string/opcionMenu_eliminar_obra</item>
+    </string-array>
+
+    <string-array name="menuContextual_ventanaParticular_cabeceraObra_cerrada_necesitaValoracion">
+        <item>@string/opcionMenu_ver_detalles</item>
+        <item>@string/opcionMenu_eliminar_obra</item>
+        <item>@string/opcionMenu_valorar_obra</item>
+    </string-array>
+
+    <string-array name="menuContextual_ventanaParticular_cabeceraObra_cerrada_noNecesitaValoracion">
+        <item>@string/opcionMenu_ver_detalles</item>
+        <item>@string/opcionMenu_eliminar_obra</item>
+    </string-array>
+
+    <string-array name="menuContextual_ventanaParticular_cabeceraProfesional_esFavorito">
+        <item>@string/opcionMenu_ver_detalles</item>
+        <item>@string/opcionMenu_eliminar_favorito</item>
+    </string-array>
+
+    <string-array name="menuContextual_ventanaParticular_cabeceraProfesional_noEsFavorito">
+        <item>@string/opcionMenu_ver_detalles</item>
+        <item>@string/opcionMenu_agregar_favorito</item>
+    </string-array>
+
+
+    <!-- Menus contextuales Ventana Profesional -->
+
+    <string-array name="menuContextual_ventanaProfesional_cabeceraObra_adjudicadas">
+        <item>@string/opcionMenu_ver_detalles</item>
+    </string-array>
+
+    <string-array name="menuContextual_ventanaProfesional_cabeceraObra_completadas">
+        <item>@string/opcionMenu_ver_detalles</item>
+    </string-array>
+
+    <string-array name="menuContextual_ventanaProfesional_cabeceraObra_seguidas_seguida">
+        <item>@string/opcionMenu_ver_detalles</item>
+        <item>@string/opcionMenu_ignorar_obra</item>
+    </string-array>
+
+    <string-array name="menuContextual_ventanaProfesional_cabeceraObra_seguidas_noSeguida">
+        <item>@string/opcionMenu_ver_detalles</item>
+        <item>@string/opcionMenu_seguir_obra</item>
+    </string-array>
+
+    <string-array name="menuContextual_ventanaProfesional_valoracion">
+        <item>@string/opcionMenu_ver_detalles</item>
+    </string-array>
+
+
+
+    <!-- Menus contextuales Ventana Busqueda Profesional -->
+
+    <string-array name="menuContextual_ventanaBusquedaProfesional_cabeceraProfesional_esFavorito">
+        <item>@string/opcionMenu_ver_detalles</item>
+        <item>@string/opcionMenu_eliminar_favorito</item>
+    </string-array>
+
+    <string-array name="menuContextual_ventanaBusquedaProfesional_cabeceraProfesional_noEsFavorito">
+        <item>@string/opcionMenu_ver_detalles</item>
+        <item>@string/opcionMenu_agregar_favorito</item>
+    </string-array>
+
+
+    <!-- Menus contextuales Ventana Datos Profesional -->
+
+    <string-array name="menuContextual_ventanaDatosObra_cabeceraProfesional_esFavorito">
+        <item>@string/opcionMenu_ver_detalles</item>
+        <item>@string/opcionMenu_agregar_favorito</item>
+    </string-array>
+
+    <string-array name="menuContextual_ventanaDatosObra_cabeceraProfesional_noEsFavorito">
+        <item>@string/opcionMenu_ver_detalles</item>
+        <item>@string/opcionMenu_agregar_favorito</item>
+    </string-array>
+
+
+    <!-- Menus contextuales Ventana Busqueda Obra -->
+
+    <string-array name="menuContextual_ventanaBusquedaObra_cabeceraObra_seguida">
+        <item>@string/opcionMenu_ver_detalles</item>
+        <item>@string/opcionMenu_ignorar_obra</item>
+    </string-array>
+
+    <string-array name="menuContextual_ventanaBusquedaObra_cabeceraObra_noSeguida">
+        <item>@string/opcionMenu_ver_detalles</item>
+        <item>@string/opcionMenu_seguir_obra</item>
+    </string-array>
+
+
+</resources>

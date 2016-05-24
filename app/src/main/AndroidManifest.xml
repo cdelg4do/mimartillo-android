@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cdelgado.mimartillocom" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icono"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Para el uso de la API de Google Places -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Clave de API (Debug)
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBNDo5LIdNdybFhYGwYXD2jNhuI7d88xOA" />
+        -->
+
+        <!-- Clave de API (Release) -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC6vKtPOWhcZsiZn1ccQCpBy0ccqeN68c0" />
+
+        <activity
+            android:name=".VentanaInicio"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".VentanaErrores"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".VentanaLogin"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <activity
+            android:name=".VentanaRegistro"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".VentanaParticular"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".VentanaNuevaObra"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".VentanaDatosObra"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".VentanaDatosProfesional"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".VentanaBusquedaProfesional"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".VentanaPerfilParticular"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".VentanaMostrarImagen"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".VentanaProfesional"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".VentanaBusquedaObra"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".VentanaAcercaDe"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <activity
+            android:name=".VentanaAccesoPremium"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".VentanaPerfilProfesional"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".VentanaResetPassword"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+    </application>
+
+</manifest>

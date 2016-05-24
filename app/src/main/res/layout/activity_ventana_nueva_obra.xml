@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_contenido"
+    android:paddingRight="2dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scr_DatosObraNueva"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:fillViewport="false"
+        android:layout_marginLeft="4dp"
+        android:layout_above="@+id/layout_BotonesObraNueva">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_DatosObraNueva" >
+
+            <LinearLayout
+                android:id="@+id/layout_titulo"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:padding="5dp"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_TituloObraNueva"
+                    android:textSize="18sp"
+                    android:typeface="sans"
+                    android:textColor="@color/texto_general"
+                    android:hint="@string/VentanaNuevaObra_txt_tituloHint"
+                    android:layout_margin="5dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaNuevaObra_txt_actividad"
+                            android:id="@+id/textView36"
+                            android:textColor="@color/texto_general"
+                            android:textStyle="italic" />
+
+                        <Spinner
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spn_ActObraNueva"
+                            android:spinnerMode="dialog"
+                            android:layout_marginLeft="5dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaNuevaObra_txt_categoria"
+                            android:id="@+id/textView59"
+                            android:textColor="@color/texto_general"
+                            android:textStyle="italic" />
+
+                        <Spinner
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spn_CatObraNueva"
+                            android:spinnerMode="dialog"
+                            android:layout_marginLeft="5dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaNuevaObra_txt_tipo"
+                            android:id="@+id/textView60"
+                            android:textColor="@color/texto_general"
+                            android:textStyle="italic" />
+
+                        <Spinner
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spn_TipObraNueva"
+                            android:spinnerMode="dialog"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp" />
+                    </TableRow>
+                </TableLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VentanaNuevaObra_txt_fechaEjecucion"
+                        android:id="@+id/textView38"
+                        android:textColor="@color/texto_general" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_FechaObraNueva"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="@string/VentanaNuevaObra_txt_fechaEjecucionHint"
+                        android:typeface="monospace"
+                        android:textStyle="italic"
+                        android:textSize="14sp"
+                        android:focusable="false" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_FechaObraNueva"
+                        android:src="@drawable/ic_calendario"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_contacto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView36"
+                        android:padding="2dp"
+                        android:text="@string/VentanaDatosObra_txt_contacto"
+                        android:id="@+id/textView45"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fondo_blanco_layout_redondeado"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:gravity="left|center_vertical"
+                        android:paddingBottom="2dp"
+                        android:id="@+id/tableRow"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaDatosObra_txt_nombre"
+                            android:textStyle="bold"
+                            android:id="@+id/textView47"
+                            android:textColor="@color/texto_general" />
+
+                        <EditText
+                            android:layout_width="225dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_NombreObraNueva"
+                            android:textColor="@color/texto_general"
+                            android:paddingLeft="10dp"
+                            android:textSize="14sp"
+                            android:hint="@string/VentanaNuevaObra_txt_nombreHint" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:gravity="left|center_vertical"
+                        android:paddingBottom="2dp"
+                        android:id="@+id/tableRow2"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaDatosObra_txt_telefono"
+                            android:textStyle="bold"
+                            android:id="@+id/textView51"
+                            android:textColor="@color/texto_general" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_TelefonoObraNueva"
+                            android:textColor="@color/texto_general"
+                            android:paddingLeft="10dp"
+                            android:textSize="14sp"
+                            android:hint="@string/VentanaNuevaObra_txt_telefonoHint"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:gravity="left|center_vertical"
+                        android:paddingBottom="2dp"
+                        android:id="@+id/tableRow3"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaDatosObra_txt_email"
+                            android:textStyle="bold"
+                            android:id="@+id/textView49"
+                            android:textColor="@color/texto_general" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_EmailObraNueva"
+                            android:textColor="@color/texto_general"
+                            android:paddingLeft="10dp"
+                            android:textSize="14sp"
+                            android:hint="@string/VentanaNuevaObra_txt_emailHint"
+                            android:inputType="textEmailAddress" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_descripcion"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/fondo_blanco_layout_redondeado">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="@string/VentanaNuevaObra_txt_descripcion"
+                        android:id="@+id/textView53"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:textSize="14sp"
+                        android:typeface="serif"
+                        android:id="@+id/txt_DescripcionObraNueva"
+                        android:textColor="@color/texto_general"
+                        android:lines="6"
+                        android:gravity="top|left"
+                        android:hint="@string/VentanaNuevaObra_txt_descripcionHint" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_ubicacion"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/fondo_blanco_layout_redondeado" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="@string/VentanaNuevaObra_txt_ubicacion"
+                        android:id="@+id/textView39"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/rgr_UbicacionObraNueva" >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaNuevaObra_txt_poblacion"
+                            android:checked="true"
+                            android:id="@+id/rbtn_PoblacionObraNueva" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="40dp"
+                            android:id="@+id/layout_PoblacionObraNueva">
+
+                            <Spinner
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spn_ProvinciaObraNueva"
+                                android:spinnerMode="dialog"
+                                android:layout_marginLeft="5dp" />
+
+                            <Spinner
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spn_PoblacionObraNueva"
+                                android:spinnerMode="dialog"
+                                android:layout_marginLeft="5dp"
+                                android:focusable="false" />
+                        </LinearLayout>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/VentanaNuevaObra_txt_mapa"
+                            android:checked="false"
+                            android:id="@+id/rbtn_MapaObraNueva" />
+
+                        <RelativeLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="40dp"
+                            android:gravity="center_vertical|right"
+                            android:id="@+id/layout_MapaObraNueva"
+                            android:layout_marginBottom="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_MapaObraNueva"
+                                android:hint="@string/VentanaNuevaObra_txt_mapaHint"
+                                android:typeface="monospace"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="italic" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_mapa"
+                                android:id="@+id/img_MapaObraNueva"
+                                android:baselineAlignBottom="false"
+                                android:clickable="false"
+                                android:background="@color/fondo_botones"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/txt_MapaObraNueva"
+                                android:layout_toEndOf="@+id/txt_MapaObraNueva"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/img_LogoGoogleObraNueva"
+                                android:src="@drawable/powered_google"
+                                android:layout_alignParentBottom="false"
+                                android:layout_alignRight="@+id/img_MapaObraNueva"
+                                android:layout_alignEnd="@+id/img_MapaObraNueva"
+                                android:layout_below="@+id/img_MapaObraNueva"
+                                android:layout_marginTop="10dp" />
+                        </RelativeLayout>
+
+                    </RadioGroup>
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_fotos"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/fondo_blanco_layout_redondeado"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:gravity="left">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="@string/VentanaDatosObra_txt_fotos"
+                        android:id="@+id/textView41"
+                        android:textStyle="bold"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/txt_ContadorFotosObraNueva"
+                        android:textColor="@color/texto_general"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView41"
+                        android:layout_toEndOf="@+id/textView41"
+                        android:padding="2dp" />
+                </RelativeLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rowCount="2"
+                    android:columnCount="4"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout_botonesFotos">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/imgObra0"
+                        android:src="@drawable/ic_nuevaimagen"
+                        android:scaleType="center"
+                        app:riv_corner_radius="20dip"
+                        app:riv_border_width="2dip"
+                        app:riv_border_color="@color/borde_circulo_perfil"
+                        app:riv_mutate_background="true"
+                        app:riv_tile_mode="clamp"
+                        app:riv_oval="false"
+                        android:layout_width="70dp"
+                        android:layout_height="54dp"
+                        android:layout_margin="5dp" />
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/imgObra1"
+                        android:src="@drawable/ic_nuevaimagen"
+                        android:scaleType="center"
+                        app:riv_corner_radius="20dip"
+                        app:riv_border_width="2dip"
+                        app:riv_border_color="@color/borde_circulo_perfil"
+                        app:riv_mutate_background="true"
+                        app:riv_tile_mode="clamp"
+                        app:riv_oval="false"
+                        android:layout_width="70dp"
+                        android:layout_height="54dp"
+                        android:layout_margin="5dp" />
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/imgObra2"
+                        android:src="@drawable/ic_nuevaimagen"
+                        android:scaleType="center"
+                        app:riv_corner_radius="20dip"
+                        app:riv_border_width="2dip"
+                        app:riv_border_color="@color/borde_circulo_perfil"
+                        app:riv_mutate_background="true"
+                        app:riv_tile_mode="clamp"
+                        app:riv_oval="false"
+                        android:layout_width="70dp"
+                        android:layout_height="54dp"
+                        android:layout_margin="5dp" />
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/imgObra3"
+                        android:src="@drawable/ic_nuevaimagen"
+                        android:scaleType="center"
+                        app:riv_corner_radius="20dip"
+                        app:riv_border_width="2dip"
+                        app:riv_border_color="@color/borde_circulo_perfil"
+                        app:riv_mutate_background="true"
+                        app:riv_tile_mode="clamp"
+                        app:riv_oval="false"
+                        android:layout_width="70dp"
+                        android:layout_height="54dp"
+                        android:layout_margin="5dp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_eliminarimagen"
+                        android:id="@+id/btnBorrar0"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_eliminarimagen"
+                        android:id="@+id/btnBorrar1"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_eliminarimagen"
+                        android:id="@+id/btnBorrar2"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_eliminarimagen"
+                        android:id="@+id/btnBorrar3"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null" />
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_BotonesObraNueva"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/VentanaNuevaObra_txt_btnReset"
+                android:id="@+id/btn_ResetObraNueva"
+                android:background="@drawable/fondo_blanco_borde_negro_layout_rectangular"
+                android:layout_marginLeft="4dp"
+                android:padding="5dp"
+                android:layout_marginRight="40dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/VentanaNuevaObra_txt_btnPublicar"
+                android:id="@+id/btn_PublicarObraNueva"
+                android:background="@drawable/fondo_blanco_borde_negro_layout_rectangular"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="4dp"
+                android:padding="5dp" />
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

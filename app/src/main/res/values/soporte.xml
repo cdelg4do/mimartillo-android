@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="version_num" translatable="false">1.0 Final
+    </string>
+
+    <string name="version_build" translatable="false">733
+    </string>
+
+    <string name="version_fecha" translatable="false">07/05/2016
+    </string>
+
+    <string name="contacto_soporte" translatable="false">info.mimartillo@gmail.com
+    </string>
+
+    <string name="sitio_web" translatable="false">mimartillo.com
+    </string>
+</resources>

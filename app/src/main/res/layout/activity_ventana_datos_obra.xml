@@ -1,0 +1,545 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TabHost android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondo_contenido">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs" />
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent"
+                android:layout_margin="2dp">
+
+                <RelativeLayout android:id="@+id/tabDatosObra"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="2dp">
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/scr_datosObra"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="4dp"
+                        android:fillViewport="false"
+                        android:layout_marginLeft="2dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/fondo_blanco_layout_redondeado"
+                                android:padding="5dp"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="&lt;titulo>"
+                                    android:id="@+id/txtTituloObra"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:typeface="sans"
+                                    android:textColor="@color/texto_general"
+                                    android:layout_marginLeft="5dp" />
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Actividad  >  Categoría  >  Tipo"
+                                        android:id="@+id/txtClasificacionObra"
+                                        android:textColor="@color/texto_general"
+                                        android:typeface="monospace"
+                                        android:textSize="12sp"
+                                        android:textStyle="italic" />
+                                </FrameLayout>
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/layoutFechasObra"
+                                    android:background="@drawable/fondo_blanco_layout_redondeado"
+                                    android:paddingLeft="5dp">
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:baselineAligned="false"
+                                        android:gravity="left"
+                                        android:paddingBottom="2dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textStyle="bold"
+                                            android:text="@string/VentanaDatosObra_txt_actualizado"
+                                            android:id="@+id/txtFechaCreacion"
+                                            android:textColor="@color/texto_general"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingLeft="10dp"
+                                            android:text="*AAAA-MM-DD hh:mm:ss*"
+                                            android:id="@+id/txtFechaCreacionDatos"
+                                            android:textColor="@color/texto_general"
+                                            android:textSize="12sp" />
+
+                                    </TableRow>
+
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:baselineAligned="false"
+                                        android:gravity="left"
+                                        android:paddingBottom="2dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textStyle="bold"
+                                            android:text="@string/VentanaDatosObra_txt_realizacion"
+                                            android:id="@+id/txtFechaRealizacion"
+                                            android:textColor="@color/texto_general"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="*AAAA-MM-DD (faltan XYZ días)*"
+                                            android:id="@+id/txtFechaRealizacionDatos"
+                                            android:paddingLeft="10dp"
+                                            android:textColor="@color/texto_general"
+                                            android:textSize="12sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:baselineAligned="false"
+                                        android:gravity="left"
+                                        android:paddingBottom="2dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textStyle="bold"
+                                            android:text="@string/VentanaDatosObra_txt_visitas"
+                                            android:id="@+id/txtVisitas"
+                                            android:textColor="@color/texto_general"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="*XY*"
+                                            android:id="@+id/txtVisitasDatos"
+                                            android:paddingLeft="10dp"
+                                            android:textColor="@color/texto_general"
+                                            android:textSize="12sp" />
+
+                                    </TableRow>
+
+                                </TableLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/fondo_blanco_layout_redondeado"
+                                android:layout_margin="5dp"
+                                android:padding="5dp">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtTituloObra"
+                                        android:padding="2dp"
+                                        android:text="@string/VentanaDatosObra_txt_contacto"
+                                        android:id="@+id/textView35"
+                                        android:textStyle="bold" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:id="@+id/frmSinDatosContacto">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtTituloObra"
+                                        android:padding="2dp"
+                                        android:text="@string/VentanaDatosObra_txt_disponible"
+                                        android:id="@+id/textView33"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/texto_resaltado"
+                                        android:textSize="12sp" />
+                                </FrameLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:id="@+id/tblDatosContacto">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:id="@+id/imgAvatarContactoObra"
+                                        android:src="@drawable/default_avatar"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentLeft="true"
+                                        app:border_width="1dp"
+                                        app:border_color="@color/borde_circulo_perfil" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/VentanaDatosObra_txt_nombre"
+                                        android:textStyle="bold"
+                                        android:id="@+id/txtNombreContactoObra"
+                                        android:textColor="@color/texto_general"
+                                        android:textSize="12sp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_toRightOf="@+id/imgAvatarContactoObra"
+                                        android:layout_toEndOf="@+id/imgAvatarContactoObra" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="12sp"
+                                        android:editable="false"
+                                        android:text="persona de contacto"
+                                        android:id="@+id/txtNombreContactoObraDatos"
+                                        android:textColor="@color/texto_general"
+                                        android:paddingLeft="10dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_toRightOf="@+id/txtNombreContactoObra"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/VentanaDatosObra_txt_email"
+                                        android:textStyle="bold"
+                                        android:id="@+id/txtEmailContactoObra"
+                                        android:textColor="@color/texto_general"
+                                        android:textSize="12sp"
+                                        android:layout_below="@+id/txtNombreContactoObraDatos"
+                                        android:layout_toRightOf="@+id/imgAvatarContactoObra"
+                                        android:layout_toEndOf="@+id/imgAvatarContactoObra" />
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="email de contacto"
+                                        android:textSize="12sp"
+                                        android:id="@+id/txtEmailContactoObraDatos"
+                                        android:textColor="@color/texto_clickable"
+                                        android:paddingLeft="10dp"
+                                        android:layout_below="@+id/txtNombreContactoObraDatos"
+                                        android:layout_alignLeft="@+id/txtNombreContactoObraDatos"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/VentanaDatosObra_txt_telefono"
+                                        android:textStyle="bold"
+                                        android:id="@+id/txtTelefonoContactoObra"
+                                        android:textColor="@color/texto_general"
+                                        android:textSize="12sp"
+                                        android:layout_below="@+id/txtEmailContactoObraDatos"
+                                        android:layout_toRightOf="@+id/imgAvatarContactoObra"
+                                        android:layout_toEndOf="@+id/imgAvatarContactoObra" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="teléfono de contacto #1"
+                                        android:textSize="12sp"
+                                        android:id="@+id/txtTelefonoContactoObraDatos"
+                                        android:textColor="@color/texto_clickable"
+                                        android:paddingLeft="10dp"
+                                        android:layout_below="@+id/txtEmailContactoObraDatos"
+                                        android:layout_alignLeft="@+id/txtEmailContactoObraDatos"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/fondo_blanco_layout_redondeado">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtTituloObra"
+                                        android:padding="2dp"
+                                        android:text="@string/VentanaDatosObra_txt_descripcion"
+                                        android:id="@+id/textView34"
+                                        android:textStyle="bold" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="7dp"
+                                        android:textSize="12sp"
+                                        android:typeface="serif"
+                                        android:text="&lt;descripcion>"
+                                        android:id="@+id/txtDescripcionObra"
+                                        android:textColor="@color/texto_general"
+                                        android:textStyle="bold|italic" />
+                                </FrameLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:background="@drawable/fondo_blanco_layout_redondeado"
+                                android:id="@+id/layoutUbicacionObra">
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" >
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:baselineAligned="false"
+                                        android:gravity="left"
+                                        android:orientation="vertical" >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="2dp"
+                                            android:text="@string/VentanaDatosObra_txt_ubicacion"
+                                            android:id="@+id/txtUbicacion"
+                                            android:textStyle="bold" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:baselineAligned="false"
+                                        android:gravity="left|center_vertical"
+                                        android:orientation="vertical">
+
+                                        <ImageButton
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            android:src="@drawable/ic_mapa"
+                                            android:id="@+id/btnMapaObra"
+                                            android:baselineAlignBottom="false"
+                                            android:clickable="false" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="2dp"
+                                            android:text="*Dirección aproximada*"
+                                            android:id="@+id/txtUbicacionDatos"
+                                            android:textColor="@color/texto_general" />
+                                    </TableRow>
+                                </TableLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:background="@drawable/fondo_blanco_layout_redondeado"
+                                android:id="@+id/layoutFotosObra">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="@string/VentanaDatosObra_txt_fotos"
+                                        android:id="@+id/txtFotosObra"
+                                        android:textStyle="bold"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginTop="0dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:id="@+id/txtFotosObraContador"
+                                        android:textColor="@color/texto_general"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_toRightOf="@+id/txtFotosObra"
+                                        android:layout_toEndOf="@+id/txtFotosObra"
+                                        android:padding="2dp" />
+                                </RelativeLayout>
+
+                                <GridLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:rowCount="1"
+                                    android:columnCount="4"
+                                    android:orientation="horizontal"
+                                    android:id="@+id/layoutBotonesImagenes">
+
+                                    <com.makeramen.roundedimageview.RoundedImageView
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:id="@+id/imgObra0"
+                                        android:src="@drawable/ic_nuevaimagen"
+                                        android:scaleType="center"
+                                        app:riv_corner_radius="20dip"
+                                        app:riv_border_width="2dip"
+                                        app:riv_border_color="@color/borde_circulo_perfil"
+                                        app:riv_mutate_background="true"
+                                        app:riv_tile_mode="clamp"
+                                        app:riv_oval="false"
+                                        android:layout_width="70dp"
+                                        android:layout_height="54dp"
+                                        android:layout_margin="5dp" />
+
+                                    <com.makeramen.roundedimageview.RoundedImageView
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:id="@+id/imgObra1"
+                                        android:src="@drawable/ic_nuevaimagen"
+                                        android:scaleType="center"
+                                        app:riv_corner_radius="20dip"
+                                        app:riv_border_width="2dip"
+                                        app:riv_border_color="@color/borde_circulo_perfil"
+                                        app:riv_mutate_background="true"
+                                        app:riv_tile_mode="clamp"
+                                        app:riv_oval="false"
+                                        android:layout_width="70dp"
+                                        android:layout_height="54dp"
+                                        android:layout_margin="5dp" />
+
+                                    <com.makeramen.roundedimageview.RoundedImageView
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:id="@+id/imgObra2"
+                                        android:src="@drawable/ic_nuevaimagen"
+                                        android:scaleType="center"
+                                        app:riv_corner_radius="20dip"
+                                        app:riv_border_width="2dip"
+                                        app:riv_border_color="@color/borde_circulo_perfil"
+                                        app:riv_mutate_background="true"
+                                        app:riv_tile_mode="clamp"
+                                        app:riv_oval="false"
+                                        android:layout_width="70dp"
+                                        android:layout_height="54dp"
+                                        android:layout_margin="5dp" />
+
+                                    <com.makeramen.roundedimageview.RoundedImageView
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:id="@+id/imgObra3"
+                                        android:src="@drawable/ic_nuevaimagen"
+                                        android:scaleType="center"
+                                        app:riv_corner_radius="20dip"
+                                        app:riv_border_width="2dip"
+                                        app:riv_border_color="@color/borde_circulo_perfil"
+                                        app:riv_mutate_background="true"
+                                        app:riv_tile_mode="clamp"
+                                        app:riv_oval="false"
+                                        android:layout_width="70dp"
+                                        android:layout_height="54dp"
+                                        android:layout_margin="5dp" />
+
+                                </GridLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </RelativeLayout>
+
+
+                <LinearLayout android:id="@+id/tabProfesionalesInteresados"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp">
+
+                    <ListView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:divider="@color/amarillo"
+                        android:dividerHeight="0dp"
+                        android:id="@+id/listaProfesionalesInteresados" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>

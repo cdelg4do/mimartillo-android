@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cdelgado.mimartillocom.VentanaDatosObra">
+
+    <item android:id="@+id/menu_cerrar_sesion"
+        android:title="@string/opcionMenu_cerrar_sesion"
+        android:icon="@drawable/ic_salir"
+        app:showAsAction="never"/>
+
+</menu>

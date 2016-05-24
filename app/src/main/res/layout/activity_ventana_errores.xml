@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.cdelgado.mimartillocom.VentanaErrores"
+                android:background="#000000">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:id="@+id/imageView2"
+        android:layout_weight="0.19"
+        android:src="@drawable/app_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/VentanaErrores_txt_titulo"
+        android:id="@+id/txtTitulo"
+        android:textColor="#ff0000"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/VentanaErrores_txt_informativo"
+        android:id="@+id/txtInformativo"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/VentanaErrores_txt_debugTitulo"
+        android:id="@+id/txtDebugTitulo"
+        android:textColor="#ff0000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/txtInformativo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:text="&lt;Info>"
+        android:id="@+id/txtInfoDebug"
+        android:layout_below="@+id/txtDebugTitulo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:textIsSelectable="true"
+        android:typeface="monospace"
+        android:textSize="12sp"
+        android:layout_above="@+id/btnCopiarPortapapeles"/>
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/VentanaErrores_txt_btnCopiarPortapapeles"
+        android:id="@+id/btnCopiarPortapapeles"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/VentanaErrores_txt_btnAceptarError"
+        android:id="@+id/btnAceptarError"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2"
+        android:maxWidth="170dp"
+        android:layout_alignTop="@+id/btnCopiarPortapapeles"/>
+
+</RelativeLayout>

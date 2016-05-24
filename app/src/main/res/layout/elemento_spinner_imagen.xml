@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="24dp"
+        android:id="@+id/imgElementoSpinner"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/gris" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:gravity="left"
+        android:textColor="@color/texto_elementoSpinner"
+        android:text="Elemento spinner"
+        android:id="@+id/txtElementoSpinner"
+        android:textStyle="italic"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:paddingLeft="4dp"
+        android:paddingTop="6dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="7dp" />
+
+</LinearLayout>

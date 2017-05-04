@@ -21,7 +21,7 @@ A more detailed description of the features is available in the app website.
 &nbsp;
 ### Additional considerations:
 
-The code in the repository does not include the keystore file needed to sign a release version of the app, only the debug version. More information on this topic is available <a href="" target="_blank">here</a>.
+The code in the repository does not include the keystore file needed to sign a release version of the app, only the debug version. More information on this topic is available <a href="https://developer.android.com/studio/publish/app-signing.html" target="_blank">here</a>.
 
 &nbsp;
 ### To-Do list:
